@@ -1,8 +1,8 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
-  example: string;
-  exampleRequired: string;
+  cap: string;
+  capRequired: string;
 };
 
 const MainForm = () => {
@@ -11,21 +11,26 @@ const MainForm = () => {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm<Inputs>();
+  } = useForm<Inputs>({
+    defaultValues: {
+      cap: "Default Value Cap Input",
+    },
+  });
+
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
-  console.log(watch("example")); // watch input value by passing the name of it
+  console.log(watch("cap")); // watch input value by passing the name of it
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form onSubmit={handleSubmit(onSubmit)}>
       {/* register your input into the hook by invoking the "register" function */}
-      <input defaultValue="test" {...register("example")} />
+      <input defaultValue="test" {...register("cap")} />
 
       {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
+      <input {...register("capRequired", { required: "Cap is required" })} />
       {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
+      {errors.capRequired && <span>{errors.capRequired.message}</span>}
 
       <input type="submit" />
     </form>
