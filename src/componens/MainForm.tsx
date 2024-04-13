@@ -3,6 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 type Inputs = {
   cap: string;
   capRequired: string;
+  capAllBt: string;
 };
 
 const MainForm = () => {
@@ -31,6 +32,12 @@ const MainForm = () => {
       <input {...register("capRequired", { required: "Cap is required" })} />
       {/* errors will return when field validation fails  */}
       {errors.capRequired && <span>{errors.capRequired.message}</span>}
+
+      <label>CAPALLBT</label>
+      <select {...register("capAllBt")}>
+        <option value="true">true</option>
+        <option value="false">false</option>
+      </select>
 
       <input type="submit" />
     </form>
