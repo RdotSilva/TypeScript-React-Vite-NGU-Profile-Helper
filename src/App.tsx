@@ -1,5 +1,5 @@
 import "./App.css";
-import EnergyForm from "./componens/EnergyForm";
+import EnergyForm from "./components/EnergyForm";
 
 function App() {
   return (
