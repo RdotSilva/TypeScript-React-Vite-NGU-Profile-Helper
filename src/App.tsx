@@ -1,10 +1,10 @@
 import "./App.css";
-import MainForm from "./componens/MainForm";
+import EnergyForm from "./componens/EnergyForm";
 
 function App() {
   return (
     <>
-      <MainForm />
+      <EnergyForm />
     </>
   );
 }
