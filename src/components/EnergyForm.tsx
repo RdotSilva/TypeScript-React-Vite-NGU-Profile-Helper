@@ -1,10 +1,9 @@
-import { Select, Input } from "antd";
+import { Select, Input, Button } from "antd";
 
 import { useForm, Controller } from "react-hook-form";
 
 const defaultValues = {
-  select: "",
-  input: "",
+  capAllBtSelect: "True",
 };
 
 const EnergyForm = () => {
@@ -20,6 +19,7 @@ const EnergyForm = () => {
         render={({ field }) => (
           <Select
             {...field}
+            fieldNames={{ label: "Test" }}
             options={[
               { value: "True", label: "True" },
               { value: "False", label: "False" },
@@ -27,14 +27,15 @@ const EnergyForm = () => {
           />
         )}
         control={control}
-        name="select"
+        name="capAllBtSelect"
         defaultValue={"True"}
       />
 
-      <button type="button" onClick={() => reset({ defaultValues })}>
-        Reset
-      </button>
-      <input type="submit" />
+      <Button type="primary" htmlType="submit">
+        Submit
+      </Button>
+
+      {/* <input type="submit" /> */}
     </form>
   );
 };
