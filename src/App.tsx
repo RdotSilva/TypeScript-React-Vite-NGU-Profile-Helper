@@ -1,10 +1,10 @@
 import "./App.css";
-import EnergyForm from "./components/EnergyForm";
+import RadioForm from "./components/RadioForm";
 
 function App() {
   return (
     <>
-      <EnergyForm />
+      <RadioForm />
     </>
   );
 }
