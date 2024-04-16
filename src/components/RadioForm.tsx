@@ -3,7 +3,7 @@ import { Button, Radio } from "antd";
 import { useForm, Controller } from "react-hook-form";
 
 const defaultValues = {
-  capAllBtSelect: "True",
+  CAPALLBT: "True",
 };
 
 const RadioForm = () => {
@@ -26,7 +26,7 @@ const RadioForm = () => {
           />
         )}
         control={control}
-        name="capAllBtSelect"
+        name="CAPALLBT"
         defaultValue={"True"}
       />
 
