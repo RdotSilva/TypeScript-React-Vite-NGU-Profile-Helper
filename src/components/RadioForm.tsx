@@ -1,17 +1,20 @@
 import { Button, Radio } from "antd";
-
 import { useForm, Controller } from "react-hook-form";
+import generateJsonObject from "../utils/generator";
 
 const defaultValues = {
   CAPALLBT: "True",
 };
 
 const RadioForm = () => {
-  const { handleSubmit, reset, watch, control, register } = useForm({
+  const { handleSubmit, control } = useForm({
     defaultValues,
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data: { CAPALLBT: string }) => {
+    const jsonObject = generateJsonObject(data.CAPALLBT);
+    console.log(jsonObject);
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
