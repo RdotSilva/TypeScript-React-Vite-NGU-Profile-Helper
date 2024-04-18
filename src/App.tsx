@@ -1,10 +1,10 @@
 import "./App.css";
-import RadioForm from "./components/RadioForm";
+import CheckForm from "./components/CheckForm";
 
 function App() {
   return (
     <>
-      <RadioForm />
+      <CheckForm />
     </>
   );
 }
