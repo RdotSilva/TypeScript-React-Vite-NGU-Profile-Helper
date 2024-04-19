@@ -12,11 +12,7 @@ const CheckForm = () => {
   });
 
   const onSubmit = (data) => {
-    const capallbtValue = data.CAPALLBT;
-
-    const valueString = capallbtValue ? "True" : "False";
-
-    const jsonObject = generateJsonObject(valueString);
+    const jsonObject = generateJsonObject(data);
     console.log(jsonObject);
   };
 
