@@ -4,7 +4,7 @@
  * @returns JSON data that can be imported into the injector
  */
 const generateJsonObject = (value: string) => {
-  if (value === "True") {
+  if (value.CAPALLBT === "True") {
     return {
       Time: 0,
       Priorities: ["CAPALLBT"],
