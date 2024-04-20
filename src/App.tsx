@@ -1,10 +1,10 @@
 import "./App.css";
-import CheckForm from "./components/CheckForm";
+import MainForm from "./components/MainForm";
 
 function App() {
   return (
     <>
-      <CheckForm />
+      <MainForm />
     </>
   );
 }
