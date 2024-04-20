@@ -6,7 +6,7 @@ type Inputs = {
   capAllBt: string;
 };
 
-const MainForm = () => {
+const ExampleForm = () => {
   const {
     register,
     handleSubmit,
@@ -44,4 +44,4 @@ const MainForm = () => {
   );
 };
 
-export default MainForm;
+export default ExampleForm;
