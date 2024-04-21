@@ -1,9 +1,10 @@
 import { Flex } from "antd";
-import CheckForm from "./CheckForm";
+import CheckForm from "../CheckForm";
+import "./MainForm.css";
 
 const MainForm = () => {
   return (
-    <Flex>
+    <Flex className="form-container">
       <CheckForm />
     </Flex>
   );
