@@ -3,8 +3,10 @@
  * @param value Value of the CAPALLBT data
  * @returns JSON data that can be imported into the injector
  */
-const generateJsonObject = (value: string) => {
-  if (value.CAPALLBT === "True") {
+const generateJsonObject = (data: any) => {
+  const { CAPALLBT } = data;
+
+  if (CAPALLBT) {
     return {
       Time: 0,
       Priorities: ["CAPALLBT"],
