@@ -1,9 +1,13 @@
+export interface FormData {
+  CAPALLBT: string;
+}
+
 /**
  * Generate JSON based on the incoming data from the form
- * @param value Value of the CAPALLBT data
+ * @param data Incoming form data
  * @returns JSON data that can be imported into the injector
  */
-const generateJsonObject = (data: any) => {
+const generateJsonObject = (data: FormData) => {
   const { CAPALLBT } = data;
 
   if (CAPALLBT) {
