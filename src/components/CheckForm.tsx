@@ -1,5 +1,5 @@
 import { Button, Checkbox } from "antd";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import generateJsonObject from "../utils/generator";
 
 const defaultValues = {
@@ -12,18 +12,23 @@ const CheckForm = () => {
   });
 
   const onSubmit = (data) => {
+    console.log(`onSubmit data: ${JSON.stringify(data)}`);
     const jsonObject = generateJsonObject(data);
     console.log(jsonObject);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Checkbox
-        {...control.register("CAPALLBT")}
-        defaultChecked={defaultValues.CAPALLBT}
-      >
-        CAPALLBT
-      </Checkbox>
+      <Controller
+        render={({ field }) => (
+          <Checkbox {...field} defaultChecked={defaultValues.CAPALLBT}>
+            CAPALLBT
+          </Checkbox>
+        )}
+        control={control}
+        name="CAPALLBT"
+        defaultValue={true}
+      />
 
       <Button type="primary" htmlType="submit">
         Submit
