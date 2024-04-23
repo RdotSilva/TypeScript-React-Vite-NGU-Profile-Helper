@@ -1,6 +1,6 @@
 import { Button, Checkbox } from "antd";
 import { Controller, useForm } from "react-hook-form";
-import generateJsonObject from "../utils/generator";
+import generateJsonObject from "../../utils/generator";
 
 const defaultValues = {
   CAPALLBT: true,
