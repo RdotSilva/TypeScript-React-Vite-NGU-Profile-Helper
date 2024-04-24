@@ -1,4 +1,4 @@
-export enum FieldDescriptions {
+export enum EnergyCapFieldDescriptions {
   CAPNGUX = "Calculate a cap for the NGU",
   CAPALLNGU = "Calculate a cap for every NGU starting from 0",
   CAPATX = "Calculate a cap for the AT and attempt to BB it",
@@ -12,7 +12,7 @@ export enum FieldDescriptions {
   CAPWISHX = "Allocate energy to wishes. X is the wish slot you wish to allocate to. If you only have 1 slot, WISH-0 will be the one you use. Wishes will follow the priority set in the WishPriorities setting and then work through cheapest wishes",
 }
 
-export enum FieldNames {
+export enum EnergyCapFieldNames {
   CAPNGUX = "CAPNGU-X",
   CAPALLNGU = "CAPALLNGU",
   CAPATX = "CAPAT-X",
