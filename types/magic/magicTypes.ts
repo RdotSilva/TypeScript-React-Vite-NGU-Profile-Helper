@@ -8,3 +8,14 @@ export enum MagicCapFieldDescriptions {
   BR = "Cast rituals from highest to lowest ignoring rituals you can't afford or will take more than an hour",
   BRX = "Cast rituals from highest to lowest that will finish before time specified by X. BR-3600 will cast rituals that will end before the 1 hour mark from your current time",
 }
+
+export enum MagicCapFieldNames {
+  CAPNGUX = "CAPNGU-X",
+  CAPALLNGU = "CAPALLNGU",
+  CAPWAN = "CAPWAN",
+  CAPTM = "CAPTM",
+  CAPRITX = "CAPRIT-X",
+  CAPWISHX = "CAPWISH-X",
+  BR = "BR",
+  BRX = "BR-X",
+}
