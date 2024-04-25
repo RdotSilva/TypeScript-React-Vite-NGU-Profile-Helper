@@ -1,0 +1,10 @@
+export enum MagicCapFieldDescriptions {
+  CAPNGUX = "Use the cap button for the NGU",
+  CAPALLNGU = "Use the cap button for every NGU starting from 0",
+  CAPWAN = "Use the cap button for wandoos magic",
+  CAPTM = "Calculate a cap for magic time machine and attempt to BB it",
+  CAPRITX = "Calculate a cap for the ritual and allocate",
+  CAPWISHX = "Allocate magic to wishes. X is the wish slot you wish to allocate to. If you only have 1 slot, WISH-0 will be the one you use. Wishes will follow the priority set in the WishPriorities setting and then work through cheapest wishes",
+  BR = "Cast rituals from highest to lowest ignoring rituals you can't afford or will take more than an hour",
+  BRX = "Cast rituals from highest to lowest that will finish before time specified by X. BR-3600 will cast rituals that will end before the 1 hour mark from your current time",
+}
