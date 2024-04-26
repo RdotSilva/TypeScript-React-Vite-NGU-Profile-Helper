@@ -1,6 +1,7 @@
 import { Button, Checkbox } from "antd";
 import { Controller, useForm } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
+import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
 
 const defaultValues = {
   CAPALLBT: true,
@@ -26,7 +27,7 @@ const CheckForm = () => {
           </Checkbox>
         )}
         control={control}
-        name="CAPALLBT"
+        name={EnergyCapFieldNames.CAPALLBT}
         defaultValue={true}
       />
 
