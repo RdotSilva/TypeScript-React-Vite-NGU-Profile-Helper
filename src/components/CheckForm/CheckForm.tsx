@@ -1,10 +1,16 @@
-import { Button, Checkbox } from "antd";
+import { Button, Checkbox, Typography } from "antd";
 import { Controller, useForm } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
-import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
+import {
+  EnergyCapFieldDescriptions,
+  EnergyCapFieldNames,
+} from "../../types/energy/energyTypes";
+
+const { Text } = Typography;
 
 const defaultValues = {
   CAPALLBT: true,
+  CAPALLAT: true,
 };
 
 const CheckForm = () => {
@@ -30,6 +36,21 @@ const CheckForm = () => {
         name={EnergyCapFieldNames.CAPALLBT}
         defaultValue={true}
       />
+
+      <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+
+      <Controller
+        render={({ field }) => (
+          <Checkbox {...field} defaultChecked={defaultValues.CAPALLAT}>
+            CAPALLAT
+          </Checkbox>
+        )}
+        control={control}
+        name={EnergyCapFieldNames.CAPALLAT}
+        defaultValue={true}
+      />
+
+      <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
 
       <Button type="primary" htmlType="submit">
         Submit
