@@ -1,4 +1,4 @@
-import { Button, Checkbox, Typography } from "antd";
+import { Button, Checkbox, Flex, Typography } from "antd";
 import { Controller, useForm } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
 import {
@@ -26,35 +26,41 @@ const CheckForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Controller
-        render={({ field }) => (
-          <Checkbox {...field} defaultChecked={defaultValues.CAPALLBT}>
-            CAPALLBT
-          </Checkbox>
-        )}
-        control={control}
-        name={EnergyCapFieldNames.CAPALLBT}
-        defaultValue={true}
-      />
+      <Flex gap="middle" vertical>
+        <Flex>
+          <Controller
+            render={({ field }) => (
+              <Checkbox {...field} defaultChecked={defaultValues.CAPALLBT}>
+                CAPALLBT
+              </Checkbox>
+            )}
+            control={control}
+            name={EnergyCapFieldNames.CAPALLBT}
+            defaultValue={true}
+          />
 
-      <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+          <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+        </Flex>
 
-      <Controller
-        render={({ field }) => (
-          <Checkbox {...field} defaultChecked={defaultValues.CAPALLAT}>
-            CAPALLAT
-          </Checkbox>
-        )}
-        control={control}
-        name={EnergyCapFieldNames.CAPALLAT}
-        defaultValue={true}
-      />
+        <Flex>
+          <Controller
+            render={({ field }) => (
+              <Checkbox {...field} defaultChecked={defaultValues.CAPALLAT}>
+                CAPALLAT
+              </Checkbox>
+            )}
+            control={control}
+            name={EnergyCapFieldNames.CAPALLAT}
+            defaultValue={true}
+          />
 
-      <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+          <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+        </Flex>
 
-      <Button type="primary" htmlType="submit">
-        Submit
-      </Button>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Flex>
     </form>
   );
 };
