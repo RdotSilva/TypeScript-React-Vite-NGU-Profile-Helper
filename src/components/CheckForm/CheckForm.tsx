@@ -39,7 +39,7 @@ const CheckForm = () => {
             defaultValue={true}
           />
 
-          <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
+          <Text code>{EnergyCapFieldDescriptions.CAPALLBT}</Text>
         </Flex>
 
         <Flex>
