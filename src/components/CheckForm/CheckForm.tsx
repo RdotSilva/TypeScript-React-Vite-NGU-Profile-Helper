@@ -5,6 +5,7 @@ import {
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
 } from "../../types/energy/energyTypes";
+import CheckFormItem from "../CheckFormItem/CheckFormItem";
 
 const { Text } = Typography;
 
@@ -27,35 +28,12 @@ const CheckForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex gap="middle" vertical>
-        <Flex>
-          <Controller
-            render={({ field }) => (
-              <Checkbox {...field} defaultChecked={defaultValues.CAPALLBT}>
-                CAPALLBT
-              </Checkbox>
-            )}
-            control={control}
-            name={EnergyCapFieldNames.CAPALLBT}
-            defaultValue={true}
-          />
-
-          <Text code>{EnergyCapFieldDescriptions.CAPALLBT}</Text>
-        </Flex>
-
-        <Flex>
-          <Controller
-            render={({ field }) => (
-              <Checkbox {...field} defaultChecked={defaultValues.CAPALLAT}>
-                CAPALLAT
-              </Checkbox>
-            )}
-            control={control}
-            name={EnergyCapFieldNames.CAPALLAT}
-            defaultValue={true}
-          />
-
-          <Text code>{EnergyCapFieldDescriptions.CAPALLAT}</Text>
-        </Flex>
+        <CheckFormItem
+          name={EnergyCapFieldNames.CAPALLBT}
+          description={EnergyCapFieldDescriptions.CAPALLBT}
+          control={control}
+          defaultValue={defaultValues.CAPALLBT}
+        />
 
         <Button type="primary" htmlType="submit">
           Submit
