@@ -6,7 +6,7 @@ const { Text } = Typography;
 interface CheckFormItemsProps {
   name: string;
   description: string;
-  control: Control;
+  control: Control<any>;
   defaultValue: string | boolean;
 }
 
