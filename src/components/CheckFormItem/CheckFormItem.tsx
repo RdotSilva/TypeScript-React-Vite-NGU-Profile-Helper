@@ -1,9 +1,21 @@
 import { Checkbox, Flex, Typography } from "antd";
-import { Controller } from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
 
 const { Text } = Typography;
 
-const CheckFormItem = ({ name, description, control, defaultValue }) => {
+interface CheckFormItemsProps {
+  name: string;
+  description: string;
+  control: Control;
+  defaultValue: string | boolean;
+}
+
+const CheckFormItem = ({
+  name,
+  description,
+  control,
+  defaultValue,
+}: CheckFormItemsProps) => {
   return (
     <Flex>
       <Controller
