@@ -7,6 +7,7 @@ import {
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 
+// TODO: Fix control error. It may have something to do with these default values.
 const defaultValues = {
   CAPALLBT: true,
   CAPALLAT: true,
