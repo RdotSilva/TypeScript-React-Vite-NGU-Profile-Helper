@@ -7,14 +7,22 @@ import {
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 
-// TODO: Fix control error. It may have something to do with these default values.
 const defaultValues = {
   CAPALLBT: true,
   CAPALLAT: true,
 };
 
+export type EnergyFormFields = {
+  CAPALLBT: boolean;
+  CAPALLBT: boolean;
+};
+
+export type FormValues = {
+  [key in EnergyCapFieldNames]: boolean;
+};
+
 const CheckForm = () => {
-  const { handleSubmit, control } = useForm({
+  const { handleSubmit, control } = useForm<FormValues>({
     defaultValues,
   });
 
