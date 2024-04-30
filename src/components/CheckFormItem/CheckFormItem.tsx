@@ -1,12 +1,9 @@
 import { Checkbox, Flex, Typography } from "antd";
 import { Control, Controller } from "react-hook-form";
 import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
+import { FormValues } from "../CheckForm/CheckForm";
 
 const { Text } = Typography;
-
-type FormValues = {
-  [key in EnergyCapFieldNames]: boolean;
-};
 
 interface CheckFormItemsProps {
   name: EnergyCapFieldNames;
