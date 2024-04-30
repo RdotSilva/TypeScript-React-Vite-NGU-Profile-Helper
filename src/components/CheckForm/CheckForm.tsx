@@ -4,6 +4,7 @@ import generateJsonObject from "../../utils/generator";
 import {
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
+  EnergyFormValues,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 
@@ -11,18 +12,8 @@ const defaultValues = {
   CAPALLBT: true,
   CAPALLAT: true,
 };
-
-export type EnergyFormFields = {
-  CAPALLBT: boolean;
-  CAPALLBT: boolean;
-};
-
-export type FormValues = {
-  [key in EnergyCapFieldNames]: boolean;
-};
-
 const CheckForm = () => {
-  const { handleSubmit, control } = useForm<FormValues>({
+  const { handleSubmit, control } = useForm<EnergyFormValues>({
     defaultValues,
   });
 
