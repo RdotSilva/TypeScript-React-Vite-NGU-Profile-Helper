@@ -25,3 +25,7 @@ export enum EnergyCapFieldNames {
   CAPAUGX = "CAPAUG-X",
   CAPWISHX = "CAPWISH-X",
 }
+
+export type EnergyFormValues = {
+  [key in EnergyCapFieldNames]: boolean;
+};
