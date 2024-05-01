@@ -11,6 +11,7 @@ import CheckFormItem from "../CheckFormItem/CheckFormItem";
 const defaultValues = {
   CAPALLBT: true,
   CAPALLAT: true,
+  CAPALLNGU: true,
 };
 const CheckForm = () => {
   const { handleSubmit, control } = useForm<EnergyFormValues>({
@@ -26,6 +27,13 @@ const CheckForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex gap="middle" vertical>
+        <CheckFormItem
+          name={EnergyCapFieldNames.CAPALLNGU}
+          description={EnergyCapFieldDescriptions.CAPALLNGU}
+          control={control}
+          defaultValue={defaultValues.CAPALLNGU}
+        />
+
         <CheckFormItem
           name={EnergyCapFieldNames.CAPALLBT}
           description={EnergyCapFieldDescriptions.CAPALLBT}
