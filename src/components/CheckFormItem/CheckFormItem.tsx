@@ -21,14 +21,13 @@ const CheckFormItem = ({
   defaultValue,
 }: CheckFormItemsProps) => {
   return (
-    <Flex>
+    <Flex align="center" justify="space-between">
       <Controller
         render={({ field }) => <Checkbox {...field}>{name}</Checkbox>}
         control={control}
         name={name}
         defaultValue={defaultValue}
       />
-
       <Text code>{description}</Text>
     </Flex>
   );
