@@ -1,9 +1,11 @@
+type FormData = Record<string, boolean>;
+
 /**
  * Generate JSON based on the incoming data from the form
  * @param data Incoming form data
  * @returns JSON data that can be imported into the injector
  */
-const generateJsonObject = (data: Record<string, boolean>) => {
+const generateJsonObject = (data: FormData) => {
   console.log(`Generate json data: ${JSON.stringify(data)}`);
 
   return {
@@ -19,6 +21,6 @@ export default generateJsonObject;
  * @param data Incoming form data object
  * @returns An array of priorities
  */
-const generateEnergyPriorities = (data: Record<string, boolean>): string[] => {
+const generateEnergyPriorities = (data: FormData): string[] => {
   return Object.keys(data).filter((key) => data[key]);
 };
