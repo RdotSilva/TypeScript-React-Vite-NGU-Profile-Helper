@@ -24,3 +24,12 @@ const generateJsonObject = (data: FormData) => {
 };
 
 export default generateJsonObject;
+
+/**
+ * Generate an array of priorities based on the incoming form data
+ * @param data Incoming form data object
+ * @returns An array of priorities
+ */
+const generateEnergyPriorities = (data: Record<string, boolean>): string[] => {
+  return Object.keys(data).filter((key) => data[key]);
+};
