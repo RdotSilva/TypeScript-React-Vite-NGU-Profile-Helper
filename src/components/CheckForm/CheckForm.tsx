@@ -12,6 +12,7 @@ const defaultValues = {
   CAPALLBT: true,
   CAPALLAT: true,
   CAPALLNGU: true,
+  CAPBESTAUG: true,
 };
 const CheckForm = () => {
   const { handleSubmit, control } = useForm<EnergyFormValues>({
@@ -46,6 +47,13 @@ const CheckForm = () => {
           description={EnergyCapFieldDescriptions.CAPALLAT}
           control={control}
           defaultValue={defaultValues.CAPALLAT}
+        />
+
+        <CheckFormItem
+          name={EnergyCapFieldNames.CAPBESTAUG}
+          description={EnergyCapFieldDescriptions.CAPBESTAUG}
+          control={control}
+          defaultValue={defaultValues.CAPBESTAUG}
         />
 
         <Button type="primary" htmlType="submit">
