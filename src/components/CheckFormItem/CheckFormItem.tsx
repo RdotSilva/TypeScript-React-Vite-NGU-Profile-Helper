@@ -28,6 +28,7 @@ const CheckFormItem = ({
         name={name}
         defaultValue={defaultValue}
       />
+      {/* TODO: Fix long length for description */}
       <Text code>{description}</Text>
     </Flex>
   );
