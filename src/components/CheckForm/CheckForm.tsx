@@ -13,6 +13,8 @@ const defaultValues = {
   CAPALLAT: true,
   CAPALLNGU: true,
   CAPBESTAUG: true,
+  CAPWAN: true,
+  CAPTM: true,
 };
 const CheckForm = () => {
   const { handleSubmit, control } = useForm<EnergyFormValues>({
