@@ -29,6 +29,13 @@ const CheckForm = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex gap="middle" vertical>
         <CheckFormItem
+          name={EnergyCapFieldNames.CAPWAN}
+          description={EnergyCapFieldDescriptions.CAPWAN}
+          control={control}
+          defaultValue={defaultValues.CAPWAN}
+        />
+
+        <CheckFormItem
           name={EnergyCapFieldNames.CAPALLNGU}
           description={EnergyCapFieldDescriptions.CAPALLNGU}
           control={control}
