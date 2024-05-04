@@ -36,6 +36,13 @@ const CheckForm = () => {
         />
 
         <CheckFormItem
+          name={EnergyCapFieldNames.CAPTM}
+          description={EnergyCapFieldDescriptions.CAPTM}
+          control={control}
+          defaultValue={defaultValues.CAPTM}
+        />
+
+        <CheckFormItem
           name={EnergyCapFieldNames.CAPALLNGU}
           description={EnergyCapFieldDescriptions.CAPALLNGU}
           control={control}
