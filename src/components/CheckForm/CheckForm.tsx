@@ -7,6 +7,7 @@ import {
   EnergyFormValues,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
+import SelectFormItem from "../SelectFormItem/Selectformitem";
 
 const defaultValues = {
   CAPALLBT: true,
@@ -71,6 +72,8 @@ const CheckForm = () => {
           control={control}
           defaultValue={defaultValues.CAPBESTAUG}
         />
+
+        <SelectFormItem />
 
         <Button type="primary" htmlType="submit">
           Submit
