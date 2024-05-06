@@ -73,7 +73,7 @@ const CheckForm = () => {
           defaultValue={defaultValues.CAPBESTAUG}
         />
 
-        <SelectFormItem />
+        <SelectFormItem name="CAPNGU-0" control={control} />
 
         <Button type="primary" htmlType="submit">
           Submit
