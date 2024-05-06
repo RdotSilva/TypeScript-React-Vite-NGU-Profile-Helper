@@ -1,7 +1,11 @@
 import React from "react";
 import { Select, Space } from "antd";
 import type { SelectProps } from "antd";
-import { Controller } from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
+import {
+  EnergyCapFieldNames,
+  EnergyFormValues,
+} from "../../types/energy/energyTypes";
 
 const options: SelectProps["options"] = [];
 
@@ -16,7 +20,12 @@ const handleChange = (value: string[]) => {
   console.log(`selected ${value}`);
 };
 
-const SelectFormItem: React.FC = ({ name, control }) => (
+interface SelectFormItemProps {
+  name: EnergyCapFieldNames;
+  control: Control<EnergyFormValues>;
+}
+
+const SelectFormItem = ({ name, control }: SelectFormItemProps) => (
   <Space style={{ width: "100%" }} direction="vertical">
     <Controller
       render={({ field }) => (
