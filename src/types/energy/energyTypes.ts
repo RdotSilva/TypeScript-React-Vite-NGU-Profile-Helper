@@ -29,3 +29,16 @@ export enum EnergyCapFieldNames {
 export type EnergyFormValues = {
   [key in EnergyCapFieldNames]: boolean;
 };
+
+export enum CapNguFieldNames {
+  CAPNGU0 = "CAPNGU-0",
+  CAPNGU1 = "CAPNGU-1",
+  CAPNGU2 = "CAPNGU-2",
+  CAPNGU3 = "CAPNGU-3",
+  CAPNGU4 = "CAPNGU-4",
+  CAPNGU5 = "CAPNGU-5",
+  CAPNGU6 = "CAPNGU-6",
+  CAPNGU7 = "CAPNGU-7",
+  CAPNGU8 = "CAPNGU-8",
+  CAPNGU9 = "CAPNGU-9",
+}
