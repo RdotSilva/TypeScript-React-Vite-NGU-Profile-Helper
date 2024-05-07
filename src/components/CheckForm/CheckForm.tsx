@@ -7,7 +7,7 @@ import {
   EnergyFormValues,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
-import SelectFormItem from "../SelectFormItem/Selectformitem";
+import SelectFormItem from "../SelectFormItem/SelectFormItem";
 
 const defaultValues = {
   CAPALLBT: true,
