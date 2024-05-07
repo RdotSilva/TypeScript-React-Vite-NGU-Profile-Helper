@@ -2,6 +2,7 @@ import { Button, Flex } from "antd";
 import { useForm } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
 import {
+  CapNguFieldNames,
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
   EnergyFormValues,
@@ -16,6 +17,7 @@ const defaultValues = {
   CAPBESTAUG: true,
   CAPWAN: true,
   CAPTM: true,
+  CAPNGUX: [],
 };
 const CheckForm = () => {
   const { handleSubmit, control } = useForm<EnergyFormValues>({
@@ -73,7 +75,7 @@ const CheckForm = () => {
           defaultValue={defaultValues.CAPBESTAUG}
         />
 
-        <SelectFormItem name="CAPNGU-0" control={control} />
+        <SelectFormItem name={CapNguFieldNames.CAPNGU0} control={control} />
 
         <Button type="primary" htmlType="submit">
           Submit
