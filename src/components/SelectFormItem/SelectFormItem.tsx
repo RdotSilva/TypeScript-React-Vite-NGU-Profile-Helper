@@ -3,7 +3,7 @@ import { Select, Space } from "antd";
 import type { SelectProps } from "antd";
 import { Control, Controller } from "react-hook-form";
 import {
-  CapNguFieldNames,
+  EnergyCapFieldNames,
   EnergyFormValues,
 } from "../../types/energy/energyTypes";
 
@@ -21,7 +21,7 @@ const handleChange = (value: string[]) => {
 };
 
 interface SelectFormItemProps {
-  name: CapNguFieldNames;
+  name: EnergyCapFieldNames;
   control: Control<EnergyFormValues>;
 }
 
@@ -35,7 +35,7 @@ const SelectFormItem = ({ name, control }: SelectFormItemProps) => (
           allowClear
           style={{ width: "100%" }}
           placeholder="CAPNGU-X"
-          onChange={handleChange}
+          onChange={field.onChange}
           options={options}
         />
       )}
