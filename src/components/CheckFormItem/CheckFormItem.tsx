@@ -24,7 +24,7 @@ const CheckFormItem = ({
     <Flex align="center" justify="space-between">
       <Controller
         render={({ field }) => (
-          <Checkbox {...field} checked={defaultValue}>
+          <Checkbox {...field} checked={field.value}>
             {name}
           </Checkbox>
         )}
