@@ -2,7 +2,6 @@ import { Button, Flex } from "antd";
 import { useForm } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
 import {
-  CapNguFieldNames,
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
   EnergyFormValues,
