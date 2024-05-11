@@ -73,7 +73,11 @@ const CheckForm = () => {
           defaultValue={defaultValues.CAPBESTAUG}
         />
 
-        <SelectFormItem name={EnergyCapFieldNames.CAPNGUX} control={control} />
+        <SelectFormItem
+          name={EnergyCapFieldNames.CAPNGUX}
+          control={control}
+          description={EnergyCapFieldDescriptions.CAPNGUX}
+        />
 
         <Button type="primary" htmlType="submit">
           Submit
