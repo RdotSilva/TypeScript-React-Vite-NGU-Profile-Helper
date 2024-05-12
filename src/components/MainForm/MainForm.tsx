@@ -1,7 +1,7 @@
 import { Flex } from "antd";
-import CheckForm from "../CheckForm/CheckForm";
+import CheckForm from "../EnergyForm/EnergyForm";
 import "./MainForm.css";
-import { useForm, FormProvider, useFormContext } from "react-hook-form";
+import { useForm, FormProvider } from "react-hook-form";
 import { EnergyFormValues } from "../../types/energy/energyTypes";
 
 const defaultValues = {
