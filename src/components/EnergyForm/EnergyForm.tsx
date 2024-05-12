@@ -1,5 +1,5 @@
 import { Button, Flex } from "antd";
-import { useForm, useFormContext } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
 import {
   EnergyCapFieldDescriptions,
@@ -17,7 +17,7 @@ const defaultValues = {
   CAPWAN: true,
   CAPTM: true,
 };
-const CheckForm = () => {
+const EnergyForm = () => {
   const { handleSubmit, control } = useFormContext<EnergyFormValues>();
 
   const onSubmit = (data) => {
@@ -85,4 +85,4 @@ const CheckForm = () => {
   );
 };
 
-export default CheckForm;
+export default EnergyForm;
