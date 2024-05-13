@@ -9,7 +9,11 @@ import {
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 import SelectFormItem from "../SelectFormItem/SelectFormItem";
 
-const EnergyForm = ({ defaultValues }) => {
+interface EnergyFormProps {
+  defaultValues: { [key: string]: boolean };
+}
+
+const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
   const { handleSubmit, control } = useFormContext<EnergyFormValues>();
 
   const onSubmit = (data) => {
