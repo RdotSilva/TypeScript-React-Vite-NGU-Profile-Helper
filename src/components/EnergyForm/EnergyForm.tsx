@@ -9,15 +9,7 @@ import {
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 import SelectFormItem from "../SelectFormItem/SelectFormItem";
 
-const defaultValues = {
-  CAPALLBT: true,
-  CAPALLAT: true,
-  CAPALLNGU: true,
-  CAPBESTAUG: true,
-  CAPWAN: true,
-  CAPTM: true,
-};
-const EnergyForm = () => {
+const EnergyForm = ({ defaultValues }) => {
   const { handleSubmit, control } = useFormContext<EnergyFormValues>();
 
   const onSubmit = (data) => {

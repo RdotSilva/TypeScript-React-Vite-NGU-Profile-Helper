@@ -21,7 +21,7 @@ const MainForm = () => {
   return (
     <FormProvider {...methods}>
       <Flex className="form-container">
-        <CheckForm />
+        <CheckForm defaultValues={defaultValues} />
       </Flex>
     </FormProvider>
   );
