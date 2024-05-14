@@ -8,6 +8,7 @@ import {
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 import SelectFormItem from "../SelectFormItem/SelectFormItem";
+import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
 
 interface EnergyFormProps {
   defaultValues: { [key: string]: boolean };
@@ -25,6 +26,7 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex gap="middle" vertical>
+        <TimeSelectForm control={control} />
         <CheckFormItem
           name={EnergyCapFieldNames.CAPWAN}
           description={EnergyCapFieldDescriptions.CAPWAN}
