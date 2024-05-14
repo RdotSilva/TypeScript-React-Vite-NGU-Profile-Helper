@@ -7,7 +7,13 @@ const onChange: InputNumberProps["onChange"] = (value) => {
 };
 
 const TimeSelectForm: React.FC = () => (
-  <InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />
+  <InputNumber
+    min={1}
+    max={72}
+    defaultValue={0}
+    onChange={onChange}
+    addonAfter="Hours"
+  />
 );
 
 export default TimeSelectForm;
