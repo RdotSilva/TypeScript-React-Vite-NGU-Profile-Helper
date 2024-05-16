@@ -26,7 +26,7 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Flex gap="middle" vertical>
-        <TimeSelectForm control={control} />
+        <TimeSelectForm control={control} name="hours" />
         <CheckFormItem
           name={EnergyCapFieldNames.CAPWAN}
           description={EnergyCapFieldDescriptions.CAPWAN}
