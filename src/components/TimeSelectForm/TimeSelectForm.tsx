@@ -1,27 +1,26 @@
 import React from "react";
 // import type { InputNumberProps } from "antd";
 import { InputNumber } from "antd";
+import { Controller } from "react-hook-form";
 
 // const onChange: InputNumberProps["onChange"] = (value) => {
 //   console.log("changed", value);
 // };
 
-const TimeSelectForm: React.FC = () => (
+const TimeSelectForm: React.FC = ({ control }) => (
   <>
-    <InputNumber
-      min={1}
-      max={72}
-      defaultValue={1}
-      onChange={onChange}
-      addonAfter="Hours"
-    />
-
-    <InputNumber
-      min={1}
-      max={59}
-      defaultValue={1}
-      onChange={onChange}
-      addonAfter="Minutes"
+    <Controller
+      render={({ field }) => (
+        <InputNumber
+          min={1}
+          max={72}
+          defaultValue={1}
+          onChange={field.onChange}
+          addonAfter="Hours"
+        />
+      )}
+      control={control}
+      name="HourSelect"
     />
   </>
 );
