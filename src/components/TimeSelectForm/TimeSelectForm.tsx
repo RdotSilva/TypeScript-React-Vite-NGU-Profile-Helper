@@ -9,9 +9,10 @@ import { Control, Controller } from "react-hook-form";
 
 interface TimeSelectFormProps {
   control: Control<any>;
+  name: string;
 }
 
-const TimeSelectForm: React.FC = ({ control }: TimeSelectFormProps) => (
+const TimeSelectForm: React.FC = ({ control, name }: TimeSelectFormProps) => (
   <>
     <Controller
       render={({ field }) => (
@@ -20,11 +21,11 @@ const TimeSelectForm: React.FC = ({ control }: TimeSelectFormProps) => (
           max={72}
           defaultValue={1}
           onChange={field.onChange}
-          addonAfter="Hours"
+          addonAfter={name}
         />
       )}
       control={control}
-      name="HourSelect"
+      name={name}
     />
   </>
 );
