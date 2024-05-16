@@ -1,13 +1,17 @@
 import React from "react";
 // import type { InputNumberProps } from "antd";
 import { InputNumber } from "antd";
-import { Controller } from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
 
 // const onChange: InputNumberProps["onChange"] = (value) => {
 //   console.log("changed", value);
 // };
 
-const TimeSelectForm: React.FC = ({ control }) => (
+interface TimeSelectFormProps {
+  control: Control<any>;
+}
+
+const TimeSelectForm: React.FC = ({ control }: TimeSelectFormProps) => (
   <>
     <Controller
       render={({ field }) => (
