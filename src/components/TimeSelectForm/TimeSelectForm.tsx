@@ -17,9 +17,9 @@ const TimeSelectForm: React.FC = ({ control, name }: TimeSelectFormProps) => (
     <Controller
       render={({ field }) => (
         <InputNumber
-          min={1}
+          min={0}
           max={72}
-          defaultValue={1}
+          defaultValue={0}
           onChange={field.onChange}
           addonAfter={name}
         />
