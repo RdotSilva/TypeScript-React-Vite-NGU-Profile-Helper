@@ -11,6 +11,7 @@ const defaultValues = {
   CAPBESTAUG: true,
   CAPWAN: true,
   CAPTM: true,
+  HOURS: 0,
 };
 
 const MainForm = () => {
