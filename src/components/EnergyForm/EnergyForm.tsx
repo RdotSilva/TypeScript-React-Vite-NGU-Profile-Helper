@@ -11,7 +11,9 @@ import SelectFormItem from "../SelectFormItem/SelectFormItem";
 import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
 
 interface EnergyFormProps {
-  defaultValues: { [key: string]: boolean };
+  defaultValues: {
+    [key: string]: boolean | number;
+  };
 }
 
 const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
