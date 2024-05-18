@@ -1,5 +1,5 @@
 import { Flex } from "antd";
-import CheckForm from "../EnergyForm/EnergyForm";
+import EnergyForm from "../EnergyForm/EnergyForm";
 import "./MainForm.css";
 import { useForm, FormProvider } from "react-hook-form";
 import { EnergyFormValues } from "../../types/energy/energyTypes";
@@ -22,7 +22,7 @@ const MainForm = () => {
   return (
     <FormProvider {...methods}>
       <Flex className="form-container">
-        <CheckForm defaultValues={defaultValues} />
+        <EnergyForm defaultValues={defaultValues} />
       </Flex>
     </FormProvider>
   );
