@@ -2,17 +2,21 @@ import React from "react";
 // import type { InputNumberProps } from "antd";
 import { InputNumber } from "antd";
 import { Control, Controller } from "react-hook-form";
+import {
+  EnergyCapFieldNames,
+  EnergyFormValues,
+} from "../../types/energy/energyTypes";
 
 // const onChange: InputNumberProps["onChange"] = (value) => {
 //   console.log("changed", value);
 // };
 
 interface TimeSelectFormProps {
-  control: Control<any>;
-  name: string;
+  control: Control<EnergyFormValues>;
+  name: EnergyCapFieldNames;
 }
 
-const TimeSelectForm: React.FC = ({ control, name }: TimeSelectFormProps) => (
+const TimeSelectForm = ({ control, name }: TimeSelectFormProps) => (
   <>
     <Controller
       render={({ field }) => (
