@@ -24,6 +24,7 @@ export enum EnergyCapFieldNames {
   CAPALLBT = "CAPALLBT",
   CAPAUGX = "CAPAUG-X",
   CAPWISHX = "CAPWISH-X",
+  HOURS = "HOURS",
 }
 
 export type EnergyFormValues = {
