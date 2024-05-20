@@ -33,3 +33,12 @@ const generateEnergyPriorities = (data: FormData): string[] => {
 
   return priorities;
 };
+
+/**
+ * Generate time based on hours passed in the incoming form data
+ * @param hours Number of hours
+ * @returns Generated time in milliseconds
+ */
+const generateTime = (hours: number): number => {
+  return hours * 60 * 60 * 1000; // Convert hours to milliseconds
+};
