@@ -8,8 +8,13 @@ type FormData = Record<string, boolean>;
 const generateJsonObject = (data: FormData) => {
   console.log(`Generate json data: ${JSON.stringify(data)}`);
 
+  const time =
+    "HOURS" in data && typeof data.HOURS === "number"
+      ? generateTime(data.HOURS)
+      : 0;
+
   return {
-    Time: 0,
+    Time: time,
     Priorities: generateEnergyPriorities(data),
   };
 };
