@@ -27,8 +27,27 @@ export enum EnergyCapFieldNames {
   HOURS = "HOURS",
 }
 
+export enum TimerOptions {
+  HOURS = "HOURS",
+}
+
+export type TimerValues = {
+  HOURS: number;
+};
+
 export type EnergyFormValues = {
-  [key in EnergyCapFieldNames]: boolean;
+  CAPNGUX: boolean;
+  CAPALLNGU: boolean;
+  CAPATX: boolean;
+  CAPALLAT: boolean;
+  CAPBESTAUG: boolean;
+  CAPWAN: boolean;
+  CAPTM: boolean;
+  CAPBTX: boolean;
+  CAPALLBT: boolean;
+  CAPAUGX: boolean;
+  CAPWISHX: boolean;
+  HOURS: number;
 };
 
 export enum CapNguFieldNames {
