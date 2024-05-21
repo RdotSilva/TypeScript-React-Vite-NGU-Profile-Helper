@@ -28,7 +28,9 @@ export default generateJsonObject;
  */
 const generateEnergyPriorities = (data: FormData): string[] => {
   // Extract priorities from keys where the value is true
-  const priorities = Object.keys(data).filter((key) => data[key]);
+  const priorities = Object.keys(data).filter(
+    (key) => data[key] && key !== "HOURS"
+  );
 
   // If CAPNGU-X is present and is an array, expand its values and include them in the priorities array
   if ("CAPNGU-X" in data && Array.isArray(data["CAPNGU-X"])) {
