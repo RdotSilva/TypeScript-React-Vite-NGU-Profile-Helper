@@ -29,10 +29,12 @@ export enum EnergyCapFieldNames {
 
 export enum TimerOptions {
   HOURS = "HOURS",
+  MINUTES = "MINUTES",
 }
 
 export type TimerValues = {
   HOURS: number;
+  MINUTES: number;
 };
 
 export type EnergyFormValues = {
