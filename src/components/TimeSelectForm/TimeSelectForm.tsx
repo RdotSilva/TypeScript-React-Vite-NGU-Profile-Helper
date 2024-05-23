@@ -7,16 +7,21 @@ import { EnergyFormValues, TimerOptions } from "../../types/energy/energyTypes";
 interface TimeSelectFormProps {
   control: Control<EnergyFormValues>;
   name: TimerOptions;
+  defaultValue: number;
 }
 
-const TimeSelectForm = ({ control, name }: TimeSelectFormProps) => (
+const TimeSelectForm = ({
+  control,
+  name,
+  defaultValue,
+}: TimeSelectFormProps) => (
   <>
     <Controller
       render={({ field }) => (
         <InputNumber
           min={0}
           max={72}
-          defaultValue={0}
+          defaultValue={defaultValue}
           onChange={field.onChange}
           addonAfter={name}
         />
