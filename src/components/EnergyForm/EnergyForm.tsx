@@ -34,7 +34,11 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
           name={TimerOptions.HOURS}
           defaultValue={defaultValues.HOURS as number}
         />
-        <TimeSelectForm control={control} name={TimerOptions.MINUTES} />
+        <TimeSelectForm
+          control={control}
+          name={TimerOptions.MINUTES}
+          defaultValue={defaultValues.MINUTES as number}
+        />
         <CheckFormItem
           name={EnergyCapFieldNames.CAPWAN}
           description={EnergyCapFieldDescriptions.CAPWAN}

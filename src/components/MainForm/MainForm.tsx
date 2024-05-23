@@ -12,6 +12,7 @@ const defaultValues = {
   CAPWAN: true,
   CAPTM: true,
   HOURS: 0,
+  MINUTES: 0,
 };
 
 const MainForm = () => {
