@@ -9,10 +9,7 @@ const generateJsonObject = (data: FormData) => {
   console.log(`Generate json data: ${JSON.stringify(data)}`);
 
   return {
-    Time: {
-      h: data.HOURS,
-      m: data.MINUTES,
-    },
+    Time: generateTime(data),
     Priorities: generateEnergyPriorities(data),
   };
 };
@@ -37,4 +34,11 @@ const generateEnergyPriorities = (data: FormData): string[] => {
   }
 
   return priorities;
+};
+
+const generateTime = (data: FormData) => {
+  return {
+    h: data.HOURS,
+    m: data.MINUTES,
+  };
 };
