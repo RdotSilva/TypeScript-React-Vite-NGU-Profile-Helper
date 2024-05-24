@@ -11,6 +11,7 @@ const generateJsonObject = (data: FormData) => {
   return {
     Time: {
       h: data.HOURS,
+      m: data.MINUTES,
     },
     Priorities: generateEnergyPriorities(data),
   };
