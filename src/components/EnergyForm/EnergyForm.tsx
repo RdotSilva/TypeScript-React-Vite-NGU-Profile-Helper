@@ -1,4 +1,4 @@
-import { Button, Flex } from "antd";
+import { Button, Flex, Typography } from "antd";
 import { useFormContext } from "react-hook-form";
 import generateJsonObject from "../../utils/generator";
 import {
@@ -10,6 +10,7 @@ import {
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
 import SelectFormItem from "../SelectFormItem/SelectFormItem";
 import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
+import { useState } from "react";
 
 interface EnergyFormProps {
   defaultValues: {
@@ -17,13 +18,19 @@ interface EnergyFormProps {
   };
 }
 
+const { Text } = Typography;
+
 const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
   const { handleSubmit, control } = useFormContext<EnergyFormValues>();
+
+  const [snippet, setSnippet] = useState("");
 
   const onSubmit = (data) => {
     console.log(`onSubmit data: ${JSON.stringify(data)}`);
     const jsonObject = generateJsonObject(data);
-    console.log(jsonObject);
+    const stringObject = JSON.stringify(jsonObject);
+    console.log(stringObject);
+    setSnippet(stringObject);
   };
 
   return (
@@ -90,6 +97,8 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
         <Button type="primary" htmlType="submit">
           Submit
         </Button>
+
+        <Text code>{snippet}</Text>
       </Flex>
     </form>
   );
