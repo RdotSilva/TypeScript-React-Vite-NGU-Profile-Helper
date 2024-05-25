@@ -12,6 +12,8 @@ import SelectFormItem from "../SelectFormItem/SelectFormItem";
 import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
 import { useState } from "react";
 
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 interface EnergyFormProps {
   defaultValues: {
     [key: string]: boolean | number;
@@ -99,6 +101,9 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
         </Button>
 
         <Text code>{snippet}</Text>
+        <CopyToClipboard text={snippet} onCopy={() => console.log("copied")}>
+          <Button>Copy</Button>
+        </CopyToClipboard>
       </Flex>
     </form>
   );
