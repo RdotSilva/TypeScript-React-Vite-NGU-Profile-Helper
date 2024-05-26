@@ -24,7 +24,6 @@ export enum EnergyCapFieldNames {
   CAPALLBT = "CAPALLBT",
   CAPAUGX = "CAPAUG-X",
   CAPWISHX = "CAPWISH-X",
-  HOURS = "HOURS",
 }
 
 export enum TimerOptions {
@@ -32,7 +31,7 @@ export enum TimerOptions {
   MINUTES = "MINUTES",
 }
 
-export type TimerValues = {
+export type TimerFormValues = {
   HOURS: number;
   MINUTES: number;
 };
@@ -49,8 +48,9 @@ export type EnergyFormValues = {
   CAPALLBT: boolean;
   CAPAUGX: boolean;
   CAPWISHX: boolean;
-  HOURS: number;
 };
+
+export type FormValues = EnergyFormValues | TimerFormValues;
 
 export enum CapNguFieldNames {
   CAPNGU0 = "CAPNGU-0",
