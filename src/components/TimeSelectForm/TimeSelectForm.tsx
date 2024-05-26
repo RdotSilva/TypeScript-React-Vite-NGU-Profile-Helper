@@ -2,10 +2,10 @@ import React from "react";
 
 import { InputNumber } from "antd";
 import { Control, Controller } from "react-hook-form";
-import { EnergyFormValues, TimerOptions } from "../../types/energy/energyTypes";
+import { TimerOptions, TimerValues } from "../../types/energy/energyTypes";
 
 interface TimeSelectFormProps {
-  control: Control<EnergyFormValues>;
+  control: Control<TimerValues>;
   name: TimerOptions;
   defaultValue: number;
 }
