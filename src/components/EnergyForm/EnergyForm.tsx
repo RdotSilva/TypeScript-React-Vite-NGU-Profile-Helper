@@ -5,6 +5,7 @@ import {
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
   EnergyFormValues,
+  FormValues,
   TimerOptions,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
@@ -23,7 +24,7 @@ interface EnergyFormProps {
 const { Text } = Typography;
 
 const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
-  const { handleSubmit, control } = useFormContext<EnergyFormValues>();
+  const { handleSubmit, control } = useFormContext<FormValues>();
 
   const [snippet, setSnippet] = useState("");
 
