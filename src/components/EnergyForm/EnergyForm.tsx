@@ -4,7 +4,6 @@ import generateJsonObject from "../../utils/generator";
 import {
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
-  EnergyFormValues,
   FormValues,
   TimerOptions,
 } from "../../types/energy/energyTypes";
