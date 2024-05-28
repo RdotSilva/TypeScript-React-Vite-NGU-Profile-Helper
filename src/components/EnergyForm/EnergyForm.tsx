@@ -52,7 +52,7 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
           name={EnergyCapFieldNames.CAPWAN}
           description={EnergyCapFieldDescriptions.CAPWAN}
           control={control}
-          defaultValue={defaultValues.CAPWAN}
+          defaultValue={defaultValues.CAPWAN as boolean}
         />
 
         <CheckFormItem
