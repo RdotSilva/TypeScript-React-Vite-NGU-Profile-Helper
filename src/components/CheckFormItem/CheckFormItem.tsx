@@ -2,7 +2,7 @@ import { Checkbox, Flex, Typography } from "antd";
 import { Control, Controller } from "react-hook-form";
 import {
   EnergyCapFieldNames,
-  EnergyFormValues,
+  FormValues,
 } from "../../types/energy/energyTypes";
 
 const { Text } = Typography;
@@ -10,7 +10,7 @@ const { Text } = Typography;
 interface CheckFormItemsProps {
   name: EnergyCapFieldNames;
   description: string;
-  control: Control<EnergyFormValues>;
+  control: Control<FormValues>;
   defaultValue: boolean;
 }
 
