@@ -8,7 +8,7 @@ import {
 const { Text } = Typography;
 
 interface CheckFormItemsProps {
-  name: EnergyCapFieldNames;
+  name: keyof typeof EnergyCapFieldNames;
   description: string;
   control: Control<FormValues>;
   defaultValue: boolean;
