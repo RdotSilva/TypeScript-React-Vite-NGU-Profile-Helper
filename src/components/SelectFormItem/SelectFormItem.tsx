@@ -5,6 +5,7 @@ import { Control, Controller } from "react-hook-form";
 import {
   EnergyCapFieldNames,
   EnergyFormValues,
+  FormValues,
 } from "../../types/energy/energyTypes";
 
 const { Text } = Typography;
@@ -24,7 +25,7 @@ const handleChange = (value: string[]) => {
 
 interface SelectFormItemProps {
   name: EnergyCapFieldNames;
-  control: Control<EnergyFormValues>;
+  control: Control<FormValues>;
   description: string;
 }
 
