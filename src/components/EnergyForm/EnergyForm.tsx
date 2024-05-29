@@ -59,35 +59,35 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
           name={EnergyCapFieldNames.CAPTM}
           description={EnergyCapFieldDescriptions.CAPTM}
           control={control}
-          defaultValue={defaultValues.CAPTM}
+          defaultValue={defaultValues.CAPTM as boolean}
         />
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPALLNGU}
           description={EnergyCapFieldDescriptions.CAPALLNGU}
           control={control}
-          defaultValue={defaultValues.CAPALLNGU}
+          defaultValue={defaultValues.CAPALLNGU as boolean}
         />
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPALLBT}
           description={EnergyCapFieldDescriptions.CAPALLBT}
           control={control}
-          defaultValue={defaultValues.CAPALLBT}
+          defaultValue={defaultValues.CAPALLBT as boolean}
         />
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPALLAT}
           description={EnergyCapFieldDescriptions.CAPALLAT}
           control={control}
-          defaultValue={defaultValues.CAPALLAT}
+          defaultValue={defaultValues.CAPALLAT as boolean}
         />
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPBESTAUG}
           description={EnergyCapFieldDescriptions.CAPBESTAUG}
           control={control}
-          defaultValue={defaultValues.CAPBESTAUG}
+          defaultValue={defaultValues.CAPBESTAUG as boolean}
         />
 
         <SelectFormItem
