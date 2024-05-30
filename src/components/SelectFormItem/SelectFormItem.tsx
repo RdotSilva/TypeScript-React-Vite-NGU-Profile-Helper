@@ -24,7 +24,7 @@ const handleChange = (value: string[]) => {
 };
 
 interface SelectFormItemProps {
-  name: EnergyCapFieldNames;
+  name: keyof typeof EnergyCapFieldNames;
   control: Control<FormValues>;
   description: string;
 }
