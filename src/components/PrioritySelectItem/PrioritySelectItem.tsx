@@ -2,11 +2,11 @@ import React from "react";
 
 import { InputNumber } from "antd";
 import { Control, Controller } from "react-hook-form";
-import { FormValues, TimerOptions } from "../../types/energy/energyTypes";
+import { FormValues } from "../../types/energy/energyTypes";
 
 interface TimeSelectFormProps {
   control: Control<FormValues>;
-  name: TimerOptions;
+  name: any;
   defaultValue: number;
 }
 
@@ -19,6 +19,7 @@ const PrioritySelectItem = ({
     <Controller
       render={({ field }) => (
         <InputNumber
+          size="small"
           min={0}
           max={7}
           defaultValue={defaultValue}
