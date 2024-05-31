@@ -13,6 +13,7 @@ import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
 import { useState } from "react";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
 
 interface EnergyFormProps {
   defaultValues: {
@@ -48,12 +49,20 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
           name={TimerOptions.MINUTES}
           defaultValue={defaultValues.MINUTES as number}
         />
-        <CheckFormItem
-          name={EnergyCapFieldNames.CAPWAN}
-          description={EnergyCapFieldDescriptions.CAPWAN}
-          control={control}
-          defaultValue={defaultValues.CAPWAN as boolean}
-        />
+
+        <Flex gap="middle" align="start">
+          <PrioritySelectItem
+            name="CAPWAN-PRIORITY"
+            control={control}
+            defaultValue={0}
+          />
+          <CheckFormItem
+            name={EnergyCapFieldNames.CAPWAN}
+            description={EnergyCapFieldDescriptions.CAPWAN}
+            control={control}
+            defaultValue={defaultValues.CAPWAN as boolean}
+          />
+        </Flex>
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPTM}
