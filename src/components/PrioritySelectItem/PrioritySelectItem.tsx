@@ -2,12 +2,14 @@ import React, { useState } from "react";
 
 import { Select } from "antd";
 import { Control, Controller } from "react-hook-form";
-import { FormValues } from "../../types/energy/energyTypes";
+import {
+  EnergyCapFieldPriorities,
+  FormValues,
+} from "../../types/energy/energyTypes";
 
 interface TimeSelectFormProps {
   control: Control<FormValues>;
-  name: any;
-  defaultValue: number;
+  name: keyof typeof EnergyCapFieldPriorities;
 }
 
 const OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
