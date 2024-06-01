@@ -4,6 +4,7 @@ import generateJsonObject from "../../utils/generator";
 import {
   EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
+  EnergyCapFieldPriorities,
   FormValues,
   TimerOptions,
 } from "../../types/energy/energyTypes";
@@ -52,9 +53,8 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
 
         <Flex gap="middle" align="start">
           <PrioritySelectItem
-            name="CAPWAN-PRIORITY"
+            name={EnergyCapFieldPriorities.CAPWAN_PRIORITY}
             control={control}
-            defaultValue={0}
           />
           <CheckFormItem
             name={EnergyCapFieldNames.CAPWAN}
