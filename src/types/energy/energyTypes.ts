@@ -50,7 +50,10 @@ export type EnergyFormValues = {
   CAPWISHX: boolean;
 };
 
-export type FormValues = EnergyFormValues | TimerFormValues;
+export type FormValues =
+  | EnergyFormValues
+  | TimerFormValues
+  | EnergyCapFieldPriorityValues;
 
 export enum CapNguFieldNames {
   CAPNGU0 = "CAPNGU-0",
@@ -78,3 +81,7 @@ export enum EnergyCapFieldPriorities {
   CAPAUGX_PRIORITY = "CAPAUG-X-PRIORITY",
   CAPWISHX_PRIORITY = "CAPWISH-X-PRIORITY",
 }
+
+export type EnergyCapFieldPriorityValues = {
+  [key in keyof typeof EnergyCapFieldPriorities]: number;
+};
