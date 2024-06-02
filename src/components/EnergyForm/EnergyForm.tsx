@@ -64,12 +64,18 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
           />
         </Flex>
 
-        <CheckFormItem
-          name={EnergyCapFieldNames.CAPTM}
-          description={EnergyCapFieldDescriptions.CAPTM}
-          control={control}
-          defaultValue={defaultValues.CAPTM as boolean}
-        />
+        <Flex gap="middle" align="start">
+          <PrioritySelectItem
+            name={EnergyCapFieldPriorities.CAPTM_PRIORITY}
+            control={control}
+          />
+          <CheckFormItem
+            name={EnergyCapFieldNames.CAPTM}
+            description={EnergyCapFieldDescriptions.CAPTM}
+            control={control}
+            defaultValue={defaultValues.CAPTM as boolean}
+          />
+        </Flex>
 
         <CheckFormItem
           name={EnergyCapFieldNames.CAPALLNGU}
