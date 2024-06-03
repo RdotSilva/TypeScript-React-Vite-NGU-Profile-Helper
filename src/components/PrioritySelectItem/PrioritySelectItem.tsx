@@ -23,11 +23,11 @@ const PrioritySelectItem = ({ control, name }: TimeSelectFormProps) => {
     <Controller
       render={({ field }) => (
         <Select
+          {...field}
           mode="multiple"
           maxCount={1}
           placeholder="Select Priority"
-          value={selectedItems}
-          onChange={setSelectedItems}
+          value={field.value}
           style={{ width: "15%" }}
           options={filteredOptions.map((item) => ({
             value: item,
