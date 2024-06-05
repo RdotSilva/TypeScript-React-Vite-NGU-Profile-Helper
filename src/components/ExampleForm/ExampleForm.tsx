@@ -13,6 +13,7 @@ const ExampleForm = () => {
   return (
     <>
       <Form
+        style={{ maxWidth: 600, backgroundColor: "white", padding: "20px" }}
         onFinish={handleSubmit((data) => {
           console.log(data);
         })}
