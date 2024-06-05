@@ -32,9 +32,10 @@ const ExampleForm = () => {
         >
           <Checkbox />/
         </FormItem>
-        <FormItem control={control} name="remember" valuePropName="checked">
+
+        {/* <FormItem control={control} name="remember" valuePropName="checked">
           <Checkbox>Remember me</Checkbox>
-        </FormItem>
+        </FormItem> */}
         <Form.Item>
           <Button type="primary" htmlType="submit">
             Submit
