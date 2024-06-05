@@ -7,13 +7,12 @@ import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
 
 const ExampleForm = () => {
   const { control, handleSubmit } = useForm({
-    defaultValues: { CAPWAN: false, password: "", remember: true },
+    defaultValues: { CAPWAN: false, CAPTM: false, remember: true },
   });
 
   return (
     <>
       <Form
-        style={{ maxWidth: 600 }}
         onFinish={handleSubmit((data) => {
           console.log(data);
         })}
@@ -25,8 +24,12 @@ const ExampleForm = () => {
         >
           <Checkbox />
         </FormItem>
-        <FormItem control={control} name="password" label="Password">
-          <Input.Password />
+        <FormItem
+          control={control}
+          name={EnergyCapFieldNames.CAPTM}
+          label={EnergyCapFieldNames.CAPTM}
+        >
+          <Checkbox />/
         </FormItem>
         <FormItem control={control} name="remember" valuePropName="checked">
           <Checkbox>Remember me</Checkbox>
