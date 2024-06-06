@@ -7,7 +7,10 @@ import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
 
 const ExampleForm = () => {
   const { control, handleSubmit } = useForm({
-    defaultValues: { CAPWAN: false, CAPTM: false, remember: true },
+    defaultValues: {
+      CAPWAN: false,
+      CAPTM: false,
+    },
   });
 
   return (
