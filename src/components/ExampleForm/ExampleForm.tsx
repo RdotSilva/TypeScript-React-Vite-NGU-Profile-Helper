@@ -32,6 +32,13 @@ const ExampleForm = () => {
         >
           <Checkbox />/
         </FormItem>
+        <FormItem
+          control={control}
+          name={EnergyCapFieldNames.CAPALLNGU}
+          label={EnergyCapFieldNames.CAPALLNGU}
+        >
+          <Checkbox />/
+        </FormItem>
 
         {/* <FormItem control={control} name="remember" valuePropName="checked">
           <Checkbox>Remember me</Checkbox>
