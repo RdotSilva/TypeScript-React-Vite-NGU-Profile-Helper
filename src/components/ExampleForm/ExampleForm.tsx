@@ -8,8 +8,14 @@ import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
 const ExampleForm = () => {
   const { control, handleSubmit } = useForm({
     defaultValues: {
-      CAPWAN: false,
-      CAPTM: false,
+      CAPALLBT: true,
+      CAPALLAT: true,
+      CAPALLNGU: true,
+      CAPBESTAUG: true,
+      CAPWAN: true,
+      CAPTM: true,
+      HOURS: 0,
+      MINUTES: 0,
     },
   });
 
