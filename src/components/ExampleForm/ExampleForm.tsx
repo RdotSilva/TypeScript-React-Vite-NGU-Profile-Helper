@@ -39,14 +39,22 @@ const ExampleForm = () => {
         >
           <InputNumber />
         </FormItem>
-
-        <FormItem
-          control={control}
-          name={EnergyCapFieldNames.CAPWAN}
-          label={EnergyCapFieldNames.CAPWAN}
-        >
-          <Select />
-        </FormItem>
+        <Flex gap="middle" align="start">
+          <FormItem
+            control={control}
+            name={EnergyCapFieldPriorities.CAPWAN_PRIORITY}
+            label={EnergyCapFieldPriorities.CAPWAN_PRIORITY}
+          >
+            <Checkbox />
+          </FormItem>
+          <FormItem
+            control={control}
+            name={EnergyCapFieldNames.CAPWAN}
+            label={EnergyCapFieldNames.CAPWAN}
+          >
+            <Select />
+          </FormItem>
+        </Flex>
 
         <FormItem
           control={control}
