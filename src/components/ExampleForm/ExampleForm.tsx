@@ -1,9 +1,13 @@
 import { useForm } from "react-hook-form";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Flex, Form, Input, InputNumber, Select } from "antd";
 
 import { FormItem } from "react-hook-form-antd";
 import { DevTool } from "@hookform/devtools";
-import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
+import {
+  EnergyCapFieldNames,
+  EnergyCapFieldPriorities,
+  TimerOptions,
+} from "../../types/energy/energyTypes";
 
 const ExampleForm = () => {
   const { control, handleSubmit } = useForm({
@@ -16,6 +20,7 @@ const ExampleForm = () => {
       CAPTM: true,
       HOURS: 0,
       MINUTES: 0,
+      CAPWAN_PRIORITY: "0",
     },
   });
 
@@ -29,11 +34,20 @@ const ExampleForm = () => {
       >
         <FormItem
           control={control}
+          name={TimerOptions.HOURS}
+          label={TimerOptions.HOURS}
+        >
+          <InputNumber />
+        </FormItem>
+
+        <FormItem
+          control={control}
           name={EnergyCapFieldNames.CAPWAN}
           label={EnergyCapFieldNames.CAPWAN}
         >
-          <Checkbox />
+          <Select />
         </FormItem>
+
         <FormItem
           control={control}
           name={EnergyCapFieldNames.CAPTM}
