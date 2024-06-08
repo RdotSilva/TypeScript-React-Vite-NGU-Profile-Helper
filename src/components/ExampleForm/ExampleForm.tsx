@@ -9,7 +9,14 @@ import {
   TimerOptions,
 } from "../../types/energy/energyTypes";
 
+const OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const ExampleForm = () => {
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [openSelect, setOpenSelect] = useState(false);
+
+  const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
+
   const { control, handleSubmit } = useForm({
     defaultValues: {
       CAPALLBT: true,
@@ -52,7 +59,7 @@ const ExampleForm = () => {
             name={EnergyCapFieldNames.CAPWAN}
             label={EnergyCapFieldNames.CAPWAN}
           >
-            <Select />
+            <Select options={OPTIONS} />
           </FormItem>
         </Flex>
 
