@@ -8,6 +8,7 @@ import {
   EnergyCapFieldPriorities,
   TimerOptions,
 } from "../../types/energy/energyTypes";
+import { useState } from "react";
 
 const OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -59,7 +60,12 @@ const ExampleForm = () => {
             name={EnergyCapFieldNames.CAPWAN}
             label={EnergyCapFieldNames.CAPWAN}
           >
-            <Select options={OPTIONS} />
+            <Select
+              options={filteredOptions.map((item) => ({
+                value: item,
+                label: item,
+              }))}
+            />
           </FormItem>
         </Flex>
 
