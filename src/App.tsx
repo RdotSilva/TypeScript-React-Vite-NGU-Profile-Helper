@@ -1,10 +1,10 @@
 import "./App.css";
-import ExampleForm from "./components/ExampleForm/ExampleForm";
+import MainFormTwo from "./components/MainForm/MainFormTwo";
 
 function App() {
   return (
     <>
-      <ExampleForm />
+      <MainFormTwo />
     </>
   );
 }
