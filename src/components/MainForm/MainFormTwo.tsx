@@ -10,13 +10,13 @@ const MainFormTwo = () => {
 
   return (
     <FormProvider {...methods}>
-      <Form
-        style={{ maxWidth: 600, backgroundColor: "white", padding: "20px" }}
-        onFinish={methods.handleSubmit((data) => {
-          console.log(data);
-        })}
-      >
-        <Flex className="form-container">
+      <Flex gap="middle" vertical>
+        <Form
+          style={{ maxWidth: 600, backgroundColor: "white", padding: "20px" }}
+          onFinish={methods.handleSubmit((data) => {
+            console.log(data);
+          })}
+        >
           <HourSelectForm />
           <MinuteSelectForm />
           <EnergyFormTwo />
@@ -25,8 +25,9 @@ const MainFormTwo = () => {
               Submit
             </Button>
           </Form.Item>
-        </Flex>
-      </Form>
+        </Form>
+      </Flex>
+
       <DevTool control={methods.control} />
     </FormProvider>
   );
