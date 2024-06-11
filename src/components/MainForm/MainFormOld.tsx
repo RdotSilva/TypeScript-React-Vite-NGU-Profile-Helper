@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 import EnergyForm from "../EnergyForm/EnergyForm";
-import "./MainForm.css";
+import "./MainFormOld.css";
 import { useForm, FormProvider } from "react-hook-form";
 import { EnergyFormValues } from "../../types/energy/energyTypes";
 
@@ -15,7 +15,7 @@ const defaultValues = {
   MINUTES: 0,
 };
 
-const MainForm = () => {
+const MainFormOld = () => {
   const methods = useForm<EnergyFormValues>({
     defaultValues,
   });
@@ -29,4 +29,4 @@ const MainForm = () => {
   );
 };
 
-export default MainForm;
+export default MainFormOld;
