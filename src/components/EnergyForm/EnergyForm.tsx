@@ -5,7 +5,7 @@ import { FormItem } from "react-hook-form-antd";
 
 import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
 
-const EnergyFormTwo = () => {
+const EnergyForm = () => {
   const { control } = useFormContext();
 
   return (
@@ -28,4 +28,4 @@ const EnergyFormTwo = () => {
   );
 };
 
-export default EnergyFormTwo;
+export default EnergyForm;
