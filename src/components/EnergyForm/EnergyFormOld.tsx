@@ -24,7 +24,7 @@ interface EnergyFormProps {
 
 const { Text } = Typography;
 
-const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
+const EnergyFormOld = ({ defaultValues }: EnergyFormProps) => {
   const { handleSubmit, control } = useFormContext<FormValues>();
 
   const [snippet, setSnippet] = useState("");
@@ -130,4 +130,4 @@ const EnergyForm = ({ defaultValues }: EnergyFormProps) => {
   );
 };
 
-export default EnergyForm;
+export default EnergyFormOld;
