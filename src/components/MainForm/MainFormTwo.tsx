@@ -1,6 +1,6 @@
 import { Button, Flex, Form } from "antd";
 import { useForm, FormProvider } from "react-hook-form";
-import EnergyFormTwo from "../EnergyForm/EnergyForm";
+import EnergyForm from "../EnergyForm/EnergyForm";
 import { DevTool } from "@hookform/devtools";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
@@ -21,7 +21,7 @@ const MainFormTwo = () => {
         >
           <HourSelectForm />
           <MinuteSelectForm />
-          <EnergyFormTwo />
+          <EnergyForm />
           <Form.Item>
             <Button type="primary" htmlType="submit">
               Submit

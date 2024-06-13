@@ -9,12 +9,12 @@ import {
   TimerOptions,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "../CheckFormItem/CheckFormItem";
-import SelectFormItem from "../SelectFormItem/SelectFormItem";
-import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
+import SelectFormItem from "./SelectFormItem";
+import TimeSelectForm from "./TimeSelectForm";
 import { useState } from "react";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
+import PrioritySelectItem from "./PrioritySelectItem";
 
 interface EnergyFormProps {
   defaultValues: {

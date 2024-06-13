@@ -1,5 +1,5 @@
 import { Flex } from "antd";
-import EnergyForm from "../EnergyForm/EnergyFormOld";
+import EnergyForm from "./EnergyFormOld";
 import "./MainFormOld.css";
 import { useForm, FormProvider } from "react-hook-form";
 import { EnergyFormValues } from "../../types/energy/energyTypes";
