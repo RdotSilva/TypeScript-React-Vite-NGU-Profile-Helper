@@ -20,7 +20,12 @@ const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   return (
     <>
       <FormItem control={control} name={name} label={label}>
-        <Select />/
+        <Select
+          options={filteredOptions.map((item) => ({
+            value: item,
+            label: item,
+          }))}
+        />
       </FormItem>
     </>
   );
