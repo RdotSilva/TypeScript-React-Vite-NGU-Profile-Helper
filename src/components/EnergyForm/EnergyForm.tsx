@@ -3,7 +3,10 @@ import { Checkbox, Flex } from "antd";
 
 import { FormItem } from "react-hook-form-antd";
 
-import { EnergyCapFieldNames } from "../../types/energy/energyTypes";
+import {
+  EnergyCapFieldNames,
+  EnergyCapFieldPriorities,
+} from "../../types/energy/energyTypes";
 import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
 
 const EnergyForm = () => {
@@ -19,7 +22,11 @@ const EnergyForm = () => {
         >
           <Checkbox />/
         </FormItem>
-        <PrioritySelectItem name="test" label="test" />
+
+        <PrioritySelectItem
+          name={EnergyCapFieldPriorities.CAPTM_PRIORITY}
+          label="Priority"
+        />
       </Flex>
       <FormItem
         control={control}
