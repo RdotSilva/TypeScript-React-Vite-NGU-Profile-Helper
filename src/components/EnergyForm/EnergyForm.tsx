@@ -35,6 +35,10 @@ const EnergyForm = () => {
       >
         <Checkbox />/
       </FormItem>
+      <PrioritySelectItem
+        name={EnergyCapFieldPriorities.CAPALLNGU_PRIORITY}
+        label="Priority"
+      />
     </>
   );
 };
