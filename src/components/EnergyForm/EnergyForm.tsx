@@ -28,17 +28,19 @@ const EnergyForm = () => {
           label="Priority"
         />
       </Flex>
-      <FormItem
-        control={control}
-        name={EnergyCapFieldNames.CAPALLNGU}
-        label={EnergyCapFieldNames.CAPALLNGU}
-      >
-        <Checkbox />/
-      </FormItem>
-      <PrioritySelectItem
-        name={EnergyCapFieldPriorities.CAPALLNGU_PRIORITY}
-        label="Priority"
-      />
+      <Flex>
+        <FormItem
+          control={control}
+          name={EnergyCapFieldNames.CAPALLNGU}
+          label={EnergyCapFieldNames.CAPALLNGU}
+        >
+          <Checkbox />/
+        </FormItem>
+        <PrioritySelectItem
+          name={EnergyCapFieldPriorities.CAPALLNGU_PRIORITY}
+          label="Priority"
+        />
+      </Flex>
     </>
   );
 };
