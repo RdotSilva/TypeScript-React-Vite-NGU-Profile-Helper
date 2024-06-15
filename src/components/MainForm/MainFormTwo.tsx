@@ -18,6 +18,7 @@ const MainFormTwo = () => {
         <Flex
           vertical
           style={{ width: 600, backgroundColor: "white", padding: "15px" }}
+          align="flex-start"
         >
           <HourSelectForm />
           <MinuteSelectForm />
