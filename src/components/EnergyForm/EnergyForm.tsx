@@ -41,6 +41,19 @@ const EnergyForm = () => {
           label="Priority"
         />
       </Flex>
+      <Flex>
+        <FormItem
+          control={control}
+          name={EnergyCapFieldNames.CAPWAN}
+          label={EnergyCapFieldNames.CAPWAN}
+        >
+          <Checkbox />/
+        </FormItem>
+        <PrioritySelectItem
+          name={EnergyCapFieldPriorities.CAPWAN_PRIORITY}
+          label="Priority"
+        />
+      </Flex>
     </>
   );
 };
