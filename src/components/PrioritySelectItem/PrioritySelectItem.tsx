@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Select } from "antd";
 import { FormItem } from "react-hook-form-antd";
 import { useFormContext } from "react-hook-form";
@@ -11,16 +11,16 @@ interface PrioritySelectItemProps {
 }
 
 const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
-  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [selectedItems, setSelectedItems] = useState([]);
   const [openSelect, setOpenSelect] = useState(false);
+  const { control, getValues } = useFormContext();
   const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
-
-  const { control } = useFormContext();
 
   return (
     <>
       <FormItem control={control} name={name} label={label}>
         <Select
+          onChange={() => console.log(getValues())}
           options={filteredOptions.map((item) => ({
             value: item,
             label: item,
