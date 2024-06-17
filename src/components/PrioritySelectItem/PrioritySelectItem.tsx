@@ -12,9 +12,16 @@ interface PrioritySelectItemProps {
 
 const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   const [selectedItems, setSelectedItems] = useState([]);
+  const [allFormValues, setAllFormValues] = useState({});
   const [openSelect, setOpenSelect] = useState(false);
   const { control, getValues } = useFormContext();
   const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
+
+  useEffect(() => {
+    const values = getValues();
+    setAllFormValues(values);
+    console.log(`All form values: ${values}`);
+  }, [getValues]);
 
   return (
     <>
