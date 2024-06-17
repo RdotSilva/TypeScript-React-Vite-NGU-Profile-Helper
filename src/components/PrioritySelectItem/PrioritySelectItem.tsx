@@ -14,8 +14,18 @@ const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   const [selectedItems, setSelectedItems] = useState([]);
   const [allFormValues, setAllFormValues] = useState({});
   const [openSelect, setOpenSelect] = useState(false);
-  const { control, getValues } = useFormContext();
-  const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
+  const { control, getValues, watch } = useFormContext();
+
+  const capAllNguPriority = watch("CAPALLNGU-PRIORITY");
+  const capTmPriority = watch("CAPTM-PRIORITY");
+  const capWanPriority = watch("CAPWAN-PRIORITY");
+
+  // TODO: Test this logic
+  const filteredOptions = OPTIONS.filter((o) => {
+    const selectOptions = [capAllNguPriority, capTmPriority, capWanPriority];
+
+    !selectOptions.includes(o);
+  });
 
   useEffect(() => {
     const values = getValues();
