@@ -20,12 +20,13 @@ const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   const capTmPriority = watch("CAPTM-PRIORITY");
   const capWanPriority = watch("CAPWAN-PRIORITY");
 
-  // TODO: Test this logic
-  const filteredOptions = OPTIONS.filter((o) => {
-    const selectOptions = [capAllNguPriority, capTmPriority, capWanPriority];
+  const selectedItems = [
+    capAllNguPriority,
+    capTmPriority,
+    capWanPriority,
+  ].filter((item) => item !== undefined && item !== null);
 
-    !selectOptions.includes(o);
-  });
+  const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
 
   useEffect(() => {
     const values = getValues();
