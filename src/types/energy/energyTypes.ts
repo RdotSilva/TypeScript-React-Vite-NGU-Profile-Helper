@@ -26,11 +26,6 @@ export enum EnergyCapFieldNames {
   CAPWISHX = "CAPWISH-X",
 }
 
-export const CAPTM = {
-  name: "CAPTM",
-  priorityName: "CAPTM-PRIORITY",
-};
-
 export enum TimerOptions {
   HOURS = "HOURS",
   MINUTES = "MINUTES",
@@ -86,6 +81,53 @@ export enum EnergyCapFieldPriorities {
   CAPAUGX_PRIORITY = "CAPAUG-X-PRIORITY",
   CAPWISHX_PRIORITY = "CAPWISH-X-PRIORITY",
 }
+
+export const EnergyCap = {
+  CAPNGUX: {
+    name: EnergyCapFieldNames.CAPNGUX,
+    priorityName: EnergyCapFieldPriorities.CAPNGUX_PRIORITY,
+  },
+  CAPALLNGU: {
+    name: EnergyCapFieldNames.CAPALLNGU,
+    priorityName: EnergyCapFieldPriorities.CAPALLNGU_PRIORITY,
+  },
+  CAPATX: {
+    name: EnergyCapFieldNames.CAPATX,
+    priorityName: EnergyCapFieldPriorities.CAPATX_PRIORITY,
+  },
+  CAPALLAT: {
+    name: EnergyCapFieldNames.CAPALLAT,
+    priorityName: EnergyCapFieldPriorities.CAPALLAT_PRIORITY,
+  },
+  CAPBESTAUG: {
+    name: EnergyCapFieldNames.CAPBESTAUG,
+    priorityName: EnergyCapFieldPriorities.CAPBESTAUG_PRIORITY,
+  },
+  CAPWAN: {
+    name: EnergyCapFieldNames.CAPWAN,
+    priorityName: EnergyCapFieldPriorities.CAPWAN_PRIORITY,
+  },
+  CAPTM: {
+    name: EnergyCapFieldNames.CAPTM,
+    priorityName: EnergyCapFieldPriorities.CAPTM_PRIORITY,
+  },
+  CAPBTX: {
+    name: EnergyCapFieldNames.CAPBTX,
+    priorityName: EnergyCapFieldPriorities.CAPBTX_PRIORITY,
+  },
+  CAPALLBT: {
+    name: EnergyCapFieldNames.CAPALLBT,
+    priorityName: EnergyCapFieldPriorities.CAPALLBT_PRIORITY,
+  },
+  CAPAUGX: {
+    name: EnergyCapFieldNames.CAPAUGX,
+    priorityName: EnergyCapFieldPriorities.CAPAUGX_PRIORITY,
+  },
+  CAPWISHX: {
+    name: EnergyCapFieldNames.CAPWISHX,
+    priorityName: EnergyCapFieldPriorities.CAPWISHX_PRIORITY,
+  },
+};
 
 export type EnergyCapFieldPriorityValues = {
   [key in keyof typeof EnergyCapFieldPriorities]: number;
