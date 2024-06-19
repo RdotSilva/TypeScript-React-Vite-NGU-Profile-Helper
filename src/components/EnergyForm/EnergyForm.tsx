@@ -4,6 +4,7 @@ import { Checkbox, Flex } from "antd";
 import { FormItem } from "react-hook-form-antd";
 
 import {
+  CAPTM,
   EnergyCapFieldNames,
   EnergyCapFieldPriorities,
 } from "../../types/energy/energyTypes";
@@ -15,18 +16,11 @@ const EnergyForm = () => {
   return (
     <>
       <Flex>
-        <FormItem
-          control={control}
-          name={EnergyCapFieldNames.CAPTM}
-          label={EnergyCapFieldNames.CAPTM}
-        >
+        <FormItem control={control} name={CAPTM.name} label={CAPTM.name}>
           <Checkbox />/
         </FormItem>
 
-        <PrioritySelectItem
-          name={EnergyCapFieldPriorities.CAPTM_PRIORITY}
-          label="Priority"
-        />
+        <PrioritySelectItem name={CAPTM.priorityName} label="Priority" />
       </Flex>
       <Flex>
         <FormItem
