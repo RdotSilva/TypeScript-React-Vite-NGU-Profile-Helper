@@ -26,6 +26,11 @@ export enum EnergyCapFieldNames {
   CAPWISHX = "CAPWISH-X",
 }
 
+export const CAPTM = {
+  name: "CAPTM",
+  priorityName: "CAPTM-PRIORITY",
+};
+
 export enum TimerOptions {
   HOURS = "HOURS",
   MINUTES = "MINUTES",
