@@ -17,6 +17,7 @@ const EnergyForm = () => {
     <>
       <Flex>
         <FormItem
+          valuePropName="checked"
           control={control}
           name={EnergyCap.CAPTM.name}
           label={EnergyCap.CAPTM.name}
@@ -31,6 +32,7 @@ const EnergyForm = () => {
       </Flex>
       <Flex>
         <FormItem
+          valuePropName="checked"
           control={control}
           name={EnergyCapFieldNames.CAPALLNGU}
           label={EnergyCapFieldNames.CAPALLNGU}
@@ -44,6 +46,7 @@ const EnergyForm = () => {
       </Flex>
       <Flex>
         <FormItem
+          valuePropName="checked"
           control={control}
           name={EnergyCapFieldNames.CAPWAN}
           label={EnergyCapFieldNames.CAPWAN}
