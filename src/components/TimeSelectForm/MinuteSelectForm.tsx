@@ -13,7 +13,7 @@ const MinuteSelectForm = () => {
         name={TimerOptions.MINUTES}
         label={TimerOptions.MINUTES}
       >
-        <InputNumber />
+        <InputNumber min={1} max={59} />
       </FormItem>
     </>
   );
