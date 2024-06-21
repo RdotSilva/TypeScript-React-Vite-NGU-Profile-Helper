@@ -13,7 +13,7 @@ const HourSelectForm = () => {
         name={TimerOptions.HOURS}
         label={TimerOptions.HOURS}
       >
-        <InputNumber />
+        <InputNumber min={0} max={72} />
       </FormItem>
     </>
   );
