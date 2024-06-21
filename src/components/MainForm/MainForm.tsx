@@ -6,7 +6,12 @@ import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
 
 const MainForm = () => {
-  const methods = useForm();
+  const defaultValues = {
+    HOURS: 0,
+    MINUTES: 1,
+  };
+
+  const methods = useForm({ defaultValues });
 
   return (
     <FormProvider {...methods}>
