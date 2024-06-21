@@ -5,7 +5,7 @@ import { DevTool } from "@hookform/devtools";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
 
-const MainFormTwo = () => {
+const MainForm = () => {
   const methods = useForm();
 
   return (
@@ -36,4 +36,4 @@ const MainFormTwo = () => {
   );
 };
 
-export default MainFormTwo;
+export default MainForm;
