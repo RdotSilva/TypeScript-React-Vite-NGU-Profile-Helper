@@ -11,7 +11,7 @@ interface PrioritySelectItemProps {
 }
 
 const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
-  const { control, getValues, watch } = useFormContext();
+  const { control, watch } = useFormContext();
 
   const capAllNguPriority = watch("CAPALLNGU-PRIORITY");
   const capTmPriority = watch("CAPTM-PRIORITY");
@@ -29,7 +29,6 @@ const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
     <>
       <FormItem control={control} name={name} label={label}>
         <Select
-          onChange={() => console.log(getValues())}
           options={filteredOptions.map((item) => ({
             value: item,
             label: item,
