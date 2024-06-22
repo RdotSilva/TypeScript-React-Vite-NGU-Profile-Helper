@@ -8,7 +8,7 @@ import {
   FormValues,
   TimerOptions,
 } from "../../types/energy/energyTypes";
-import CheckFormItem from "../CheckFormItem/CheckFormItem";
+import CheckFormItem from "./CheckFormItem/CheckFormItem";
 import SelectFormItem from "./SelectFormItem";
 import TimeSelectForm from "./TimeSelectForm";
 import { useState } from "react";

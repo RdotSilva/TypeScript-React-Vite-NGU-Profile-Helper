@@ -3,7 +3,7 @@ import { Control, Controller } from "react-hook-form";
 import {
   EnergyCapFieldNames,
   FormValues,
-} from "../../types/energy/energyTypes";
+} from "../../../types/energy/energyTypes";
 
 const { Text } = Typography;
 
