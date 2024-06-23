@@ -5,12 +5,12 @@ import { DevTool } from "@hookform/devtools";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
 
-const MainForm = () => {
-  const defaultValues = {
-    HOURS: 0,
-    MINUTES: 1,
-  };
+const defaultValues = {
+  HOURS: 0,
+  MINUTES: 1,
+};
 
+const MainForm = () => {
   const methods = useForm({ defaultValues });
 
   return (
