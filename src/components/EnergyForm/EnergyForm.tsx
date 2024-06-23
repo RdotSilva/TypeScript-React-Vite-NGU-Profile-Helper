@@ -3,8 +3,13 @@ import { Checkbox, Flex } from "antd";
 
 import { FormItem } from "react-hook-form-antd";
 
+import { Typography } from "antd";
+
+const { Text } = Typography;
+
 import {
   EnergyCap,
+  EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
   EnergyCapFieldPriorities,
 } from "../../types/energy/energyTypes";
@@ -29,6 +34,9 @@ const EnergyForm = () => {
           name={EnergyCap.CAPTM.priorityName}
           label="Priority"
         />
+        <Text style={{ marginLeft: "15px" }}>
+          {EnergyCapFieldDescriptions.CAPTM}
+        </Text>
       </Flex>
       <Flex>
         <FormItem
