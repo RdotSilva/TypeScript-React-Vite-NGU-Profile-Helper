@@ -16,11 +16,13 @@ const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   const capAllNguPriority = watch("CAPALLNGU-PRIORITY");
   const capTmPriority = watch("CAPTM-PRIORITY");
   const capWanPriority = watch("CAPWAN-PRIORITY");
+  const capBestAugPriority = watch("CAPBESTAUG-PRIORITY");
 
   const selectedItems = [
     capAllNguPriority,
     capTmPriority,
     capWanPriority,
+    capBestAugPriority,
   ].filter((item) => item !== undefined && item !== null);
 
   const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
