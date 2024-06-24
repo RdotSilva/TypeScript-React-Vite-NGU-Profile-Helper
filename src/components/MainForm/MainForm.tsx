@@ -4,11 +4,7 @@ import EnergyForm from "../EnergyForm/EnergyForm";
 import { DevTool } from "@hookform/devtools";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
-
-const defaultValues = {
-  HOURS: 0,
-  MINUTES: 1,
-};
+import { defaultValues } from "../../types/defvaultValues";
 
 const MainForm = () => {
   const methods = useForm({ defaultValues });
