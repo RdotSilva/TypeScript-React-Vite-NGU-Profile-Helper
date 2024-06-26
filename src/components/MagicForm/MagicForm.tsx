@@ -1,7 +1,13 @@
-import { Checkbox, Flex } from "antd";
+import { Checkbox, Flex, Typography } from "antd";
 import { useFormContext } from "react-hook-form";
 import { FormItem } from "react-hook-form-antd";
-import { MagicCap } from "../../types/magic/magicTypes";
+import {
+  MagicCap,
+  MagicCapFieldDescriptions,
+} from "../../types/magic/magicTypes";
+import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
+
+const { Text } = Typography;
 
 const MagicForm = () => {
   const { control } = useFormContext();
@@ -16,6 +22,10 @@ const MagicForm = () => {
       >
         <Checkbox />/
       </FormItem>
+      <PrioritySelectItem name={MagicCap.CAPALLNGU.priority} label="Priority" />
+      <Text style={{ marginLeft: "15px" }}>
+        {MagicCapFieldDescriptions.CAPALLNGU}
+      </Text>
     </Flex>
   );
 };
