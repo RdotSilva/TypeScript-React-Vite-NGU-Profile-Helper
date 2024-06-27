@@ -14,12 +14,18 @@ import {
   EnergyCapFieldPriorities,
 } from "../../types/energy/energyTypes";
 import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
+import HourSelectForm from "../TimeSelectForm/HourSelectForm";
+import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
 
 const EnergyForm = () => {
   const { control } = useFormContext();
 
   return (
     <>
+      <Flex>
+        <HourSelectForm />
+        <MinuteSelectForm />
+      </Flex>
       <Flex>
         <FormItem
           valuePropName="checked"

@@ -21,8 +21,6 @@ const MainForm = () => {
           style={{ width: 600, backgroundColor: "white", padding: "15px" }}
           align="flex-start"
         >
-          <HourSelectForm />
-          <MinuteSelectForm />
           <EnergyForm />
           <Form.Item>
             <Button type="primary" htmlType="submit">
