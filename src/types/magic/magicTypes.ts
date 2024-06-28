@@ -33,4 +33,8 @@ export const MagicCap = {
     name: MagicCapFieldNames.CAPWAN,
     priority: "MAGIC_CAPWAN_PRIORITY",
   },
+  CAPTM: {
+    name: MagicCapFieldNames.CAPTM,
+    priority: "MAGIC_CAPTM_PRIORITY",
+  },
 };
