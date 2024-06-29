@@ -22,6 +22,7 @@ export enum MagicCapFieldNames {
 
 export enum MagicCapFieldPriorities {
   CAPNGUX_PRIORITY = "CAPNGU-X-PRIORITY",
+  CAPALLNGU_PRIORITY = "CAPALLNGU_PRIORITY"
 }
 
 export const MagicCap = {
