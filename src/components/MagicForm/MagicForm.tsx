@@ -49,7 +49,10 @@ const MagicForm = () => {
         <PrioritySelectItem
           name={MagicCap.BR.priority}
           label="Priority"
-        />
+        />  <Text style={{ marginLeft: "15px" }}>
+        {MagicCapFieldDescriptions.BR}
+      </Text>
+
     </>
   );
 };
