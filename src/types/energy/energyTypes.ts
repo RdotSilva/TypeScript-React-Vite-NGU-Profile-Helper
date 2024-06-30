@@ -29,6 +29,7 @@ export enum EnergyCapFieldNames {
 export enum TimerOptions {
   HOURS = "HOURS",
   MINUTES = "MINUTES",
+  SECONDS = "SECONDS"
 }
 
 export type TimerFormValues = {
