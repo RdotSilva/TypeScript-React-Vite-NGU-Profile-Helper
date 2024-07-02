@@ -37,22 +37,6 @@ const MagicForm = () => {
           {MagicCapFieldDescriptions.CAPALLNGU}
         </Text>
       </Flex>
-      <Flex>
-        <FormItem
-          valuePropName="checked"
-          control={control}
-          name={MagicCap.BR.name}
-          label={MagicCap.BR.name}
-        >
-          <Checkbox />/
-        </FormItem>
-        <PrioritySelectItem
-          name={MagicCap.BR.priority}
-          label="Priority"
-        />  <Text style={{ marginLeft: "15px" }}>
-        {MagicCapFieldDescriptions.BR}
-      </Text>
-
     </>
   );
 };
