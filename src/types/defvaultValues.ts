@@ -7,3 +7,7 @@ export const defaultValues = {
 export const energyDefaultValues = {
   ENERGY_CAPTM: true
 }
+
+export const magicDefaultValues = {
+  MAGIC_CAPTM: true
+}
