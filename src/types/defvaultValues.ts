@@ -3,3 +3,7 @@ export const defaultValues = {
   MINUTES: 1,
   CAPTM: true,
 };
+
+export const energyDefaultValues = {
+  ENERGY_CAPTM: true
+}
