@@ -2,9 +2,7 @@ import { Button, Flex, Form } from "antd";
 import { useForm, FormProvider } from "react-hook-form";
 import EnergyForm from "../EnergyForm/EnergyForm";
 import { DevTool } from "@hookform/devtools";
-import HourSelectForm from "../TimeSelectForm/HourSelectForm";
-import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
-import { defaultValues } from "../../types/defvaultValues";
+import { defaultValues } from "../../types/defaultValues";
 
 const MainForm = () => {
   const methods = useForm({ defaultValues });
