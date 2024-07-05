@@ -41,7 +41,7 @@ const EnergyForm = () => {
           label="Priority"
         />
         <Text style={{ marginLeft: "15px" }}>
-          {EnergyCapFieldDescriptions.CAPTM}
+          {EnergyCap.CAPTM.description}
         </Text>
       </Flex>
       <Flex>
