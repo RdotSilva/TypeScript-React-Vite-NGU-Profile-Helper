@@ -92,10 +92,12 @@ export const EnergyCap = {
   CAPNGUX: {
     name: EnergyCapFieldNames.CAPNGUX,
     priorityName: EnergyCapFieldPriorities.CAPNGUX_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPNGUX,
   },
   CAPALLNGU: {
     name: EnergyCapFieldNames.CAPALLNGU,
     priorityName: EnergyCapFieldPriorities.CAPALLNGU_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPALLNGU,
   },
   CAPATX: {
     name: EnergyCapFieldNames.CAPATX,
@@ -116,6 +118,7 @@ export const EnergyCap = {
   CAPTM: {
     name: EnergyCapFieldNames.CAPTM,
     priorityName: EnergyCapFieldPriorities.CAPTM_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPTM,
   },
   CAPBTX: {
     name: EnergyCapFieldNames.CAPBTX,
