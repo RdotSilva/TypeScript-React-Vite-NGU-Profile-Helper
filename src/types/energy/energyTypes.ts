@@ -29,6 +29,8 @@ export enum EnergyCapFieldNamesOld {
 export const EnergyCapFieldNames = {
   CAPTM: "ENERGY_CAPTM",
   CAPALLNGU: "ENERGY_CAPALLNGU",
+  CAPNGUX: "ENERGY_CAPNGUX",
+  CAPATX: "ENERGY_CAPATX",
 };
 
 export enum TimerOptions {
