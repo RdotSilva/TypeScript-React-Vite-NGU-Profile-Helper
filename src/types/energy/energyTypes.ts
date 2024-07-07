@@ -117,10 +117,12 @@ export const EnergyCap = {
   CAPBESTAUG: {
     name: EnergyCapFieldNames.CAPBESTAUG,
     priorityName: EnergyCapFieldPriorities.CAPBESTAUG_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPBESTAUG,
   },
   CAPWAN: {
     name: EnergyCapFieldNames.CAPWAN,
     priorityName: EnergyCapFieldPriorities.CAPWAN_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPWAN,
   },
   CAPTM: {
     name: EnergyCapFieldNames.CAPTM,
