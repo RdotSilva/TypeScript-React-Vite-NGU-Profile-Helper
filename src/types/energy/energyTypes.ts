@@ -135,14 +135,17 @@ export const EnergyCap = {
   CAPBTX: {
     name: EnergyCapFieldNames.CAPBTX,
     priorityName: EnergyCapFieldPriorities.CAPBTX_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPBTX,
   },
   CAPALLBT: {
     name: EnergyCapFieldNames.CAPALLBT,
     priorityName: EnergyCapFieldPriorities.CAPALLBT_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPALLBT,
   },
   CAPAUGX: {
     name: EnergyCapFieldNames.CAPAUGX,
     priorityName: EnergyCapFieldPriorities.CAPAUGX_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPAUGX,
   },
   CAPWISHX: {
     name: EnergyCapFieldNames.CAPWISHX,
