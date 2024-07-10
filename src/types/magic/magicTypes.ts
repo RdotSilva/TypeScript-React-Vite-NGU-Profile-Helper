@@ -23,6 +23,7 @@ export enum MagicCapFieldNames {
 export enum MagicCapFieldPriorities {
   CAPNGUX_PRIORITY = "MAGIC_CAPNGU_X_PRIORITY",
   CAPALLNGU_PRIORITY = "MAGIC_CAPALLNGU_PRIORITY",
+  CAPWAN_PRIORITY = "MAGIC_CAPWAN_PRIORITY",
 }
 
 export const MagicCap = {
@@ -36,7 +37,7 @@ export const MagicCap = {
   },
   CAPWAN: {
     name: MagicCapFieldNames.CAPWAN,
-    priority: "MAGIC_CAPWAN_PRIORITY",
+    priority: MagicCapFieldPriorities.CAPWAN_PRIORITY,
   },
   CAPTM: {
     name: MagicCapFieldNames.CAPTM,
