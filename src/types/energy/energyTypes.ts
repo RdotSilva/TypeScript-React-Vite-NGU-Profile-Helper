@@ -150,6 +150,7 @@ export const EnergyCap = {
   CAPWISHX: {
     name: EnergyCapFieldNames.CAPWISHX,
     priorityName: EnergyCapFieldPriorities.CAPWISHX_PRIORITY,
+    description: EnergyCapFieldDescriptions.CAPWISHX,
   },
 };
 
