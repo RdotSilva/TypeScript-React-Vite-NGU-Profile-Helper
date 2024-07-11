@@ -12,20 +12,6 @@ export enum EnergyCapFieldDescriptions {
   CAPWISHX = "Allocate energy to wishes. X is the wish slot you wish to allocate to. If you only have 1 slot, WISH-0 will be the one you use. Wishes will follow the priority set in the WishPriorities setting and then work through cheapest wishes",
 }
 
-export enum EnergyCapFieldNamesOld {
-  CAPNGUX = "CAPNGU-X",
-  CAPALLNGU = "CAPALLNGU",
-  CAPATX = "CAPAT-X",
-  CAPALLAT = "CAPALLAT",
-  CAPBESTAUG = "CAPBESTAUG",
-  CAPWAN = "CAPWAN",
-  CAPTM = "CAPTM",
-  CAPBTX = "CAPBT-X",
-  CAPALLBT = "CAPALLBT",
-  CAPAUGX = "CAPAUG-X",
-  CAPWISHX = "CAPWISH-X",
-}
-
 export const EnergyCapFieldNames = {
   CAPTM: "ENERGY_CAPTM",
   CAPALLNGU: "ENERGY_CAPALLNGU",
