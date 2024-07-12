@@ -32,6 +32,7 @@ export const MagicCap = {
   CAPNGUX: {
     name: MagicCapFieldNames.CAPNGUX,
     priority: MagicCapFieldPriorities.CAPNGUX_PRIORITY,
+    description: MagicCapFieldDescriptions.CAPNGUX,
   },
   CAPALLNGU: {
     name: MagicCapFieldNames.CAPALLNGU,
