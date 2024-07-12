@@ -34,7 +34,7 @@ const MagicForm = () => {
           label="Priority"
         />
         <Text style={{ marginLeft: "15px" }}>
-          {MagicCapFieldDescriptions.CAPALLNGU}
+          {MagicCap.CAPALLNGU.description}
         </Text>
       </Flex>
     </>
