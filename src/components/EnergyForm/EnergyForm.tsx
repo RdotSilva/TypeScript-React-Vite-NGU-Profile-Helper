@@ -9,7 +9,6 @@ const { Text } = Typography;
 
 import {
   EnergyCap,
-  EnergyCapFieldDescriptions,
   EnergyCapFieldNames,
   EnergyCapFieldPriorities,
 } from "../../types/energy/energyTypes";
