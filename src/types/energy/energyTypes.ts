@@ -26,17 +26,6 @@ export const EnergyCapFieldNames = {
   CAPWISHX: "ENERGY_CAPWISHX",
 };
 
-export enum TimerOptions {
-  HOURS = "HOURS",
-  MINUTES = "MINUTES",
-  SECONDS = "SECONDS",
-}
-
-export type TimerFormValues = {
-  HOURS: number;
-  MINUTES: number;
-};
-
 export type EnergyFormValues = {
   CAPNGUX: boolean;
   CAPALLNGU: boolean;
