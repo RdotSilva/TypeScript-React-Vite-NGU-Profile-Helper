@@ -47,6 +47,7 @@ export const MagicCap = {
   CAPTM: {
     name: MagicCapFieldNames.CAPTM,
     priority: MagicCapFieldPriorities.CAPTM_PRIORITY,
+    description: MagicCapFieldDescriptions.CAPTM,
   },
   BR: {
     name: MagicCapFieldNames.BR,
