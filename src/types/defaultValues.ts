@@ -1,4 +1,5 @@
 import { EnergyCapFieldNames } from "./energy/energyTypes";
+import { MagicCapFieldNames } from "./magic/magicTypes";
 
 export const energyDefaultValues = {
   [EnergyCapFieldNames.CAPTM]: true,
@@ -6,7 +7,7 @@ export const energyDefaultValues = {
   [EnergyCapFieldNames.CAPNGUX]: true,
 };
 export const magicDefaultValues = {
-  MAGIC_CAPTM: true,
+  [MagicCapFieldNames.CAPTM]: true,
 };
 
 export const defaultValues = {
