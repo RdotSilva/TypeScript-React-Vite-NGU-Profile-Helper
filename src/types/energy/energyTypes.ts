@@ -1,3 +1,5 @@
+import { TimerFormValues } from "../timer/timerTypes";
+
 export enum EnergyCapFieldDescriptions {
   CAPNGUX = "Calculate a cap for the NGU",
   CAPALLNGU = "Calculate a cap for every NGU starting from 0",
