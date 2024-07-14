@@ -8,6 +8,8 @@ export const energyDefaultValues = {
 };
 export const magicDefaultValues = {
   [MagicCapFieldNames.CAPTM]: true,
+  [MagicCapFieldNames.CAPALLNGU]: true,
+  [MagicCapFieldNames.BR]: true,
 };
 
 export const defaultValues = {
