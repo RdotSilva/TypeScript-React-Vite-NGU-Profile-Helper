@@ -52,5 +52,6 @@ export const MagicCap = {
   BR: {
     name: MagicCapFieldNames.BR,
     priority: MagicCapFieldPriorities.BR_PRIORITY,
+    description: MagicCapFieldDescriptions.BR,
   },
 };
