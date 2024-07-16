@@ -77,57 +77,57 @@ export enum EnergyCapFieldPriorities {
 export const EnergyCap = {
   CAPNGUX: {
     name: EnergyCapFieldNames.CAPNGUX,
-    priorityName: EnergyCapFieldPriorities.CAPNGUX_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPNGUX,
     description: EnergyCapFieldDescriptions.CAPNGUX,
   },
   CAPALLNGU: {
     name: EnergyCapFieldNames.CAPALLNGU,
-    priorityName: EnergyCapFieldPriorities.CAPALLNGU_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPALLNGU,
     description: EnergyCapFieldDescriptions.CAPALLNGU,
   },
   CAPATX: {
     name: EnergyCapFieldNames.CAPATX,
-    priorityName: EnergyCapFieldPriorities.CAPATX_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPATX,
     description: EnergyCapFieldDescriptions.CAPATX,
   },
   CAPALLAT: {
     name: EnergyCapFieldNames.CAPALLAT,
-    priorityName: EnergyCapFieldPriorities.CAPALLAT_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPALLAT,
     description: EnergyCapFieldDescriptions.CAPALLAT,
   },
   CAPBESTAUG: {
     name: EnergyCapFieldNames.CAPBESTAUG,
-    priorityName: EnergyCapFieldPriorities.CAPBESTAUG_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPBESTAUG,
     description: EnergyCapFieldDescriptions.CAPBESTAUG,
   },
   CAPWAN: {
     name: EnergyCapFieldNames.CAPWAN,
-    priorityName: EnergyCapFieldPriorities.CAPWAN_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPWAN,
     description: EnergyCapFieldDescriptions.CAPWAN,
   },
   CAPTM: {
     name: EnergyCapFieldNames.CAPTM,
-    priorityName: EnergyCapFieldPriorities.CAPTM_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPTM,
     description: EnergyCapFieldDescriptions.CAPTM,
   },
   CAPBTX: {
     name: EnergyCapFieldNames.CAPBTX,
-    priorityName: EnergyCapFieldPriorities.CAPBTX_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPBTX,
     description: EnergyCapFieldDescriptions.CAPBTX,
   },
   CAPALLBT: {
     name: EnergyCapFieldNames.CAPALLBT,
-    priorityName: EnergyCapFieldPriorities.CAPALLBT_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPALLBT,
     description: EnergyCapFieldDescriptions.CAPALLBT,
   },
   CAPAUGX: {
     name: EnergyCapFieldNames.CAPAUGX,
-    priorityName: EnergyCapFieldPriorities.CAPAUGX_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPAUGX,
     description: EnergyCapFieldDescriptions.CAPAUGX,
   },
   CAPWISHX: {
     name: EnergyCapFieldNames.CAPWISHX,
-    priorityName: EnergyCapFieldPriorities.CAPWISHX_PRIORITY,
+    priorityName: EnergyCapFieldPriorities.CAPWISHX,
     description: EnergyCapFieldDescriptions.CAPWISHX,
   },
 };
