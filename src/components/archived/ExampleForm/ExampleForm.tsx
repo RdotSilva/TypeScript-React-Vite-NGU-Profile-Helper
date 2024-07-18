@@ -29,6 +29,7 @@ const ExampleForm = () => {
       HOURS: 0,
       MINUTES: 0,
       "CAPWAN-PRIORITY": "0",
+      "CAPALLNGU-PRIORITY": "0",
     },
   });
 
