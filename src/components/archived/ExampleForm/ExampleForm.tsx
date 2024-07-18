@@ -16,6 +16,7 @@ const ExampleForm = () => {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [openSelect, setOpenSelect] = useState(false);
 
+  // TODO: Fix type for options
   const filteredOptions = OPTIONS.filter((o) => !selectedItems.includes(o));
 
   const { control, handleSubmit } = useForm({
