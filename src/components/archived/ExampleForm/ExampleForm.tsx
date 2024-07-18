@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
-import { Button, Checkbox, Flex, Form, Input, InputNumber, Select } from "antd";
+import { Button, Checkbox, Flex, Form, InputNumber, Select } from "antd";
 
 import { FormItem } from "react-hook-form-antd";
 import { DevTool } from "@hookform/devtools";
 import {
   EnergyCapFieldNames,
   EnergyCapFieldPriorities,
-  TimerOptions,
 } from "../../../types/energy/energyTypes";
 import { useState } from "react";
+import { TimerOptions } from "../../../types/timer/timerTypes";
 
 const OPTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
