@@ -29,8 +29,8 @@ const ExampleForm = () => {
       CAPTM: true,
       HOURS: 0,
       MINUTES: 0,
-      "CAPWAN-PRIORITY": "0",
-      "CAPALLNGU-PRIORITY": "0",
+      CAPWAN_PRIORITY: "0",
+      CAPALLNGU_PRIORITY: "0",
       CAPALLAT_PRIORITY: "0",
     },
   });
