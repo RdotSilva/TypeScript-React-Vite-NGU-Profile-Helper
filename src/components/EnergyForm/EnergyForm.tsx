@@ -47,8 +47,8 @@ const EnergyForm = () => {
         <FormItem
           valuePropName="checked"
           control={control}
-          name={EnergyCapFieldNames.CAPALLNGU}
-          label={EnergyCapFieldNames.CAPALLNGU}
+          name={EnergyCap.CAPALLNGU.name}
+          label={EnergyCap.CAPALLNGU.name}
         >
           <Checkbox />/
         </FormItem>
