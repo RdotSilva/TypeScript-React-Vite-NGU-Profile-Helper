@@ -53,7 +53,7 @@ const EnergyForm = () => {
           <Checkbox />/
         </FormItem>
         <PrioritySelectItem
-          name={EnergyCapFieldPriorities.CAPALLNGU_PRIORITY}
+          name={EnergyCapFieldPriorities.CAPALLNGU}
           label="Priority"
         />
       </Flex>
@@ -67,7 +67,7 @@ const EnergyForm = () => {
           <Checkbox />/
         </FormItem>
         <PrioritySelectItem
-          name={EnergyCapFieldPriorities.CAPWAN_PRIORITY}
+          name={EnergyCapFieldPriorities.CAPWAN}
           label="Priority"
         />
       </Flex>
@@ -81,7 +81,7 @@ const EnergyForm = () => {
           <Checkbox />/
         </FormItem>
         <PrioritySelectItem
-          name={EnergyCapFieldPriorities.CAPBESTAUG_PRIORITY}
+          name={EnergyCapFieldPriorities.CAPBESTAUG}
           label="Priority"
         />
       </Flex>
@@ -95,7 +95,7 @@ const EnergyForm = () => {
           <Checkbox />/
         </FormItem>
         <PrioritySelectItem
-          name={EnergyCapFieldPriorities.CAPALLBT_PRIORITY}
+          name={EnergyCapFieldPriorities.CAPALLBT}
           label="Priority"
         />
       </Flex>
