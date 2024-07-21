@@ -1,10 +1,7 @@
 import { Checkbox, Flex, Typography } from "antd";
 import { useFormContext } from "react-hook-form";
 import { FormItem } from "react-hook-form-antd";
-import {
-  MagicCap,
-  MagicCapFieldDescriptions,
-} from "../../types/magic/magicTypes";
+import { MagicCap } from "../../types/magic/magicTypes";
 import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
