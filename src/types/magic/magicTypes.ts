@@ -10,14 +10,14 @@ export enum MagicCapFieldDescriptions {
 }
 
 export enum MagicCapFieldNames {
-  CAPNGUX = "CAPNGU-X",
-  CAPALLNGU = "CAPALLNGU",
-  CAPWAN = "CAPWAN",
-  CAPTM = "CAPTM",
-  CAPRITX = "CAPRIT-X",
-  CAPWISHX = "CAPWISH-X",
-  BR = "BR",
-  BRX = "BR-X",
+  CAPNGUX = "MAGIC_CAPNGU-X",
+  CAPALLNGU = "MAGIC_CAPALLNGU",
+  CAPWAN = "MAGIC_CAPWAN",
+  CAPTM = "MAGIC_CAPTM",
+  CAPRITX = "MAGIC_CAPRIT-X",
+  CAPWISHX = "MAGIC_CAPWISH-X",
+  BR = "MAGIC_BR",
+  BRX = "MAGIC_BR-X",
 }
 
 export enum MagicCapFieldPriorities {
