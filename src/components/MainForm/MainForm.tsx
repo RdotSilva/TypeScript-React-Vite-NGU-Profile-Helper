@@ -22,7 +22,7 @@ const MainForm = () => {
           <EnergyForm />
           <Form.Item>
             <Button type="primary" htmlType="submit">
-              Submit
+              Generate
             </Button>
           </Form.Item>
         </Flex>
