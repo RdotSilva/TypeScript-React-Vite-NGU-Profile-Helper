@@ -44,3 +44,8 @@
 .form-main {
   color: #a54141;
 }
+
+.magic-form {
+  border-radius: 5px;
+  border: #434343;
+}
