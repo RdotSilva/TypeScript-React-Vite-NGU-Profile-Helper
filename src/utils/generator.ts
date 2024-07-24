@@ -42,3 +42,7 @@ const generateTime = (data: FormData) => {
     m: data.MINUTES,
   };
 };
+
+const generateMagicPriorities = () => {
+  // TODO: Add logic to generate the magic priorities
+};
