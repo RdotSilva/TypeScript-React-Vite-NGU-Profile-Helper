@@ -6,7 +6,6 @@ import {
   EnergyCapFieldNames,
   EnergyCapFieldPriorities,
   FormValues,
-  TimerOptions,
 } from "../../types/energy/energyTypes";
 import CheckFormItem from "./CheckFormItem/CheckFormItem";
 import SelectFormItem from "./SelectFormItem";
@@ -15,6 +14,7 @@ import { useState } from "react";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import PrioritySelectItem from "./PrioritySelectItem";
+import { TimerOptions } from "../../types/timer/timerTypes";
 
 interface EnergyFormProps {
   defaultValues: {
