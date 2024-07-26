@@ -15,6 +15,8 @@ import {
 import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
 import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
+import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
+import { TimerOptions } from "../../types/timer/timerTypes";
 
 const EnergyForm = () => {
   const { control } = useFormContext();
@@ -22,7 +24,12 @@ const EnergyForm = () => {
   return (
     <>
       <Flex>
-        <HourSelectForm />
+        <TimeSelectForm
+          name={TimerOptions.HOURS}
+          label={TimerOptions.HOURS}
+          min={0}
+          max={99}
+        />
         <MinuteSelectForm />
       </Flex>
       <Flex>
