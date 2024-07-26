@@ -13,7 +13,6 @@ import {
   EnergyCapFieldPriorities,
 } from "../../types/energy/energyTypes";
 import PrioritySelectItem from "../PrioritySelectItem/PrioritySelectItem";
-import HourSelectForm from "../TimeSelectForm/HourSelectForm";
 import MinuteSelectForm from "../TimeSelectForm/MinuteSelectForm";
 import TimeSelectForm from "../TimeSelectForm/TimeSelectForm";
 import { TimerOptions } from "../../types/timer/timerTypes";
