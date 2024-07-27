@@ -13,13 +13,13 @@ interface PrioritySelectItemProps {
 const PrioritySelectItem = ({ name, label }: PrioritySelectItemProps) => {
   const { control, watch } = useFormContext();
 
-  const capAllNguPriority = watch("CAPALLNGU-PRIORITY");
+  const energyCapAllNguPriority = watch("ENERGY_CAPALLNGU-PRIORITY");
   const capTmPriority = watch("CAPTM-PRIORITY");
   const capWanPriority = watch("CAPWAN-PRIORITY");
   const capBestAugPriority = watch("CAPBESTAUG-PRIORITY");
 
   const selectedItems = [
-    capAllNguPriority,
+    energyCapAllNguPriority,
     capTmPriority,
     capWanPriority,
     capBestAugPriority,
