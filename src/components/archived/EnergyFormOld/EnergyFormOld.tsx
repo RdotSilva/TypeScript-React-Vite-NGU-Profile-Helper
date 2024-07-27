@@ -7,7 +7,7 @@ const defaultValues = {
 };
 
 const EnergyForm = () => {
-  const { handleSubmit, reset, watch, control, register } = useForm({
+  const { handleSubmit, control } = useForm({
     defaultValues,
   });
 
